@@ -1,13 +1,18 @@
 {
-  "name": "us-national-parks",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
+    "name": "us-national-parks",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@rollup/plugin-graphql": "^1.1.0",
+    "@vue/apollo-composable": "^4.0.0-alpha.18",
+    "graphql": "^16.5.0",
+    "graphql-tag": "^2.12.6",
     "vue": "^3.2.25",
     "vue-router": "^4.0.16"
   },
