@@ -1,0 +1,15 @@
+# Note about this file name.
+# Convention is to use the type extension first and gql extension second.
+# Types are query, subscription, mutation.
+# You can also use the extension "graphql" instead of "gql".
+
+#Returns chosen park.
+query getChosenPark {
+    chosenPark(id: "yell") {
+        id
+        name
+        regions
+        states
+        website
+    }
+}
