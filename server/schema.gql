@@ -1,0 +1,24 @@
+const { gql } = require("apollo-server");
+
+const typeDefs = gql`
+
+    # A client sends a query...
+    type Query {
+        allParks(search: String): [Park]
+        chosenPark(id: ID!): Park
+        chosenState(states: String): [Park]
+        chosenRegion(regions: String): [Park]
+    }
+
+    # to get this type object.
+    # This object has five fields: id, name, region, state, website.
+    type Park {
+        id: ID,
+        name: String,
+        regions: [String],
+        states: [String],
+        website: String
+    }
+`;
+
+module.exports = typeDefs;
