@@ -4,8 +4,8 @@ const typeDefs = gql`
 
     # A client sends a query...
     type Query {
-        allParks(search: String): [Park]
-        chosenPark(id: ID!): Park
+        chosenName(search: String): [Park]
+        #chosenPark(id: ID!): Park
         chosenState(search: String): [Park]
         chosenRegion(search: String): [Park]
     }
