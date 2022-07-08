@@ -6,8 +6,8 @@ const typeDefs = gql`
     type Query {
         allParks(search: String): [Park]
         chosenPark(id: ID!): Park
-        chosenState(states: String): [Park]
-        chosenRegion(regions: String): [Park]
+        chosenState(search: String): [Park]
+        chosenRegion(search: String): [Park]
     }
 
     # to get this type object.
