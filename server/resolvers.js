@@ -443,35 +443,29 @@ const parks = [
 ];
 
 
-// Resolvers connects everything together.
+//Resolvers connects everything together.
 //They resolve the “functionalities” defined in the schema.
-//This resolver retrieves parks from the "parks" array above.
-
-//const chosenPark = "Yosemite National Park";
-//const chosenState = "Alaska";
-//const chosenRegion = "Pacific region";
-
 const resolvers = {
     Query: {
         //allParks: ($name) => parks, (With no search capability. Check schema too.)
-        allParks: (_, { search }) => {
+        chosenName: (_, { search }) => {
             let park = parks.filter((park) =>
                 park.name.toLowerCase().includes( search.toLowerCase() )
             );
             return park;
         },
-        chosenPark: (_, args) => {
+        /*chosenPark: (_, args) => {
             const { id } = args;
             let park = parks.find((park) => park.id === id );
             return park;
-        },
+        },*/
         chosenState: (_, { search }) => {
             let park = parks.filter((park) =>
                 park.states.map((state) =>
                     state.substring(0, 7).toLowerCase()).includes(
                         search.substring(0, 7).toLowerCase()
                     )
-            );
+            ); 
             return park;
         },
         chosenRegion: (_, { search }) => {
@@ -487,3 +481,10 @@ const resolvers = {
 };
 
 module.exports = resolvers;
+
+//NOTES ON SUB_STRINGS.
+//In chosenState, (0, 7) deciphers overlaps like North Carolina, North Dakota.
+//Shorter states like Ohio and Utah still okay.
+//In chosenRegion, there is little overlap so (0, 2) works fine.
+//Without substrings, search works. But user forced to type full term.
+//For example, all of "North Carolina".
