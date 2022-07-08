@@ -4,8 +4,8 @@
 # You can also use the extension "graphql" instead of "gql".
 
 #Returns chosen region.
-query getChosenRegion {
-    chosenRegion(regions: "Intermountain region") {
+query getChosenRegion($search: String) {
+    chosenRegion(search: $search) {
         id
         name
         regions
