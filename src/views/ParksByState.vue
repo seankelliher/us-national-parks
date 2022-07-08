@@ -13,34 +13,51 @@
         />
         {{ option }}
         <div class="sample">
-            <p
-                v-for="park in result.chosenState"
-                :key="park.index"
+            <input
+                v-model="searchTerm"
+                type="text"
+                name="search-term"
             >
-                {{ park.name }}
-                <br><span
-                    v-for="state in park.states"
-                    :key="state.index"
-                >
-                    {{ state }}, 
-                </span><br>
-                <span
-                    v-for="region in park.regions"
-                    :key="region.index"
-                >
-                    {{ region }}, 
-                </span>
+            <p v-if="loading">
+                Loading...
             </p>
+            <p v-else-if="error">
+                Something went wrong! Please try again.
+            </p>
+            <!--use <template v-else> for all parks to show-->
+            <!--use <template v-else-if="result"> to hide parks until user types-->
+            <!--use v-for="park in result.allParks" to use results-->
+            <template v-else>
+                <p
+                    v-for="park in parks"
+                    :key="park.id"
+                >
+                    {{ park.name }}
+                    <br><span
+                        v-for="state in park.states"
+                        :key="state.index"
+                    >
+                        {{ state }}, 
+                    </span><br>
+                    <span
+                        v-for="region in park.regions"
+                        :key="region.index"
+                    >
+                        {{ region }}, 
+                    </span>
+                </p>
+            </template>
         </div>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu ac tortor dignissim convallis aenean. Consectetur a erat nam at lectus urna. Consequat mauris nunc congue nisi vitae suscipit. At urna condimentum mattis pellentesque id nibh tortor id. Tincidunt dui ut ornare lectus sit amet est placerat. Tellus in hac habitasse platea. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Sapien eget mi proin sed libero enim sed faucibus turpis. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue. Consectetur lorem donec massa sapien. Tortor consequat id porta nibh venenatis cras. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. A lacus vestibulum sed arcu non odio. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Dictum at tempor commodo ullamcorper a lacus. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Sagittis nisl rhoncus mattis rhoncus urna. Purus semper eget duis at tellus at urna. Pharetra et ultrices neque ornare. Vitae nunc sed velit dignissim sodales ut eu sem. Donec ac odio tempor orci dapibus ultrices in iaculis. Amet nulla facilisi morbi tempus iaculis. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ullamcorper sit amet risus nullam. In arcu cursus euismod quis viverra nibh. Non nisi est sit amet facilisis magna etiam tempor. Ultrices sagittis orci a scelerisque purus semper eget duis at. Arcu risus quis varius quam quisque id diam.</p>
+        <p>Text content can go here, if needed.</p>
     </section>
 </template>
 
 <script>
+import { ref } from "vue";
 import PageIntro from "@/components/PageIntro.vue";
 import PageNav from "@/components/PageNav.vue";
 
+import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
 import CHOSEN_STATE_QUERY from "@/graphql/chosenState.query.gql";
 
@@ -51,8 +68,35 @@ export default {
         PageNav
     },
     setup() {
-        const { result } = useQuery(CHOSEN_STATE_QUERY);
-        return { result };
+        const searchTerm = ref("");
+        //NOTE: the "search" argument needs to be a function that returns an object to the "result" constant.
+        //Also, in Apollo, the mechanics for a loading flag are done automatically. But we have to create a constant and return it, and add a place for it to display on the template.
+        //Error messages are similar.
+        //Debounce is built in too. Wait 500ms after user stops typing, then fire request to server.
+        const { result, loading, error } = useQuery(
+            CHOSEN_STATE_QUERY,
+            () => (
+                { search: searchTerm.value }
+            ),
+            () => (
+                {
+                    debounce: 500,
+                    enabled: searchTerm.value.length > 2 //3 or more characters.
+                }
+            )
+        );
+
+        //results from query, default value for parks (empty array to itinerate over), and a function that defines the data we want to extract from the query response. We just want the data, not anything else. Also, now the default valie in empty array, we cna change template above to <template v-else>
+        //const parks = useResult(result, [], data => data.allParks);
+        //return { result, searchTerm, loading, error };
+
+        //Computed replaces deprecated useResult.
+        //Same as const parks = useResult(result, [], data => data.allParks);
+        //Provides default value for const parks, empty array to iterate over.
+        //Provices function to extract what we want from the query, just the data.
+        const parks = computed(() => result.value?.chosenState ?? []);
+
+        return { parks, searchTerm, loading, error };
     },
     data() {
         return {
