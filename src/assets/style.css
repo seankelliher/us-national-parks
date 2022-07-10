@@ -25,8 +25,6 @@ header {
     width: 90%;
     margin: 0;
     padding: 0.5em 5%;
-    background: #364020;
-    background: #F2CB05;
     background: #01401C; /*Curset green*/
     flex: initial; /*flex: 0 1 auto*/
 }
@@ -35,14 +33,12 @@ nav {
     width: 90%;
     margin: 0;
     padding: 0.25em 5%;
-    background: #F2E9CE; /*lighter tan*/
-    background: #F2E2C4; /*darker tan*/
     background: #F2CB05; /*Curset yellow*/
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    align-items: center; /*cross axis*/
 }
 
 section {
@@ -52,7 +48,7 @@ section {
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; /*main axis*/
+    justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
 }
 
@@ -70,17 +66,24 @@ section {
     }
 }
 
-figure {
+figure.logo {
     width: 30%;
     margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
 }
 
+figure.park-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
 figcaption {
-    width: 90%;
+    width: 100%;
     margin: 0.5em 0;
-    padding: 0 5%;
+    padding: 0;
 }
 
 footer {
@@ -109,173 +112,18 @@ button.nav a {
 }
 
 button.nav a.router-link-exact-active {
-    color: #f2e750; /*yellow*/
-    color: #91CDF2; /*light blue*/
     color: #000;
     text-decoration: underline;
 }
 
-@media all and (min-width: 300px) {
-    button.nav {
-        width: 42px;
-        /*height:  42px;*/
-    }
-}
-
-@media all and (min-width: 400px) {
-    button.nav {
-        width: 48px;
-        /*height:  48px;*/
-    }
-}
-
-@media all and (min-width: 500px) {
-    button.nav {
-        width: 54px;
-        /*height:  54px;*/
-    }
-}
-
-@media all and (min-width: 600px) {
-    button.nav {
-        width: 120px;
-        /*height:  60px;*/
-    }
-}
-
-/*button for "fees and schedules" and "message sent!"*/
-button.regular {
-  width: 140px;
-    margin: 0.25em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    background: transparent;
-    border: none;
-    border-radius: 6px;
-    flex: initial; /*flex: 0 1 auto*/
-}
-
-button.regular:hover {
-    cursor: pointer;
-}
-
-/*button for "notes"*/
-button.notes {
-    margin-bottom: 1.5em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    background: none;
-    border: 1px solid #eee; /*grey 200*/
-    border-radius: 6px;
-    flex: initial; /*flex: 0 1 auto*/
-}
-
-button.notes:hover {
-    cursor: pointer;
-}
-
-/*FORM AND RELATED ELEMENTS ARE BELOW*/
-form {
-    width: 90%;
-    margin: 0;
-    padding: 1em 5%;
-    border: 1px solid #eee; /*grey 200*/
-    flex: initial; /*flex: 0 1 auto*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
-}
-
-.entry {
-    width: 100%;
-    margin: 1em 0;
-    padding: 0;
-    border: none;
-}
-
-label {
+/*FORM ELEMENTS ARE BELOW*/
+input[type="text"] {
     width: 100%;
     margin: 0.5em 0;
     padding: 0;
-    display: inline-flex;
-}
-
-.error-msg {
-    width: 100%;
-    margin: 1em 0;
-    padding: 0;
-}
-
-input[type="text"], input[type="email"] {
-    width: 100%;
-    margin: 0.5em 0;
-    padding: 0;
-}
-
-@media all and (min-width: 300px) {
-    input[type="radio"] {
-        width: 8%;
-        margin: 0.5em 0;
-        padding: 0;
-    }
-
-    /*label immediately following "radio" input*/
-    input[type="radio"] + label {
-        width: 92%;
-        margin: 0;
-        padding: 0;
-        display: inline-flex;
-    }
-}
-
-@media all and (min-width: 400px) {
-    input[type="radio"] {
-        width: 5%;
-        margin: 0.5em 0;
-        padding: 0;
-    }
-
-    /*label immediately following "radio" input*/
-    input[type="radio"] + label {
-        width: 95%;
-        margin: 0;
-        padding: 0;
-        display: inline-flex;
-    }
-}
-
-select {
-    width: 70%;
-    margin: 0.5em 30% 0.5em 0;
-    padding: 0;
-}
-
-textarea {
-    width: 100%;
-    margin: 0.5em 0;
-    padding: 0;
-}
-
-#flash-msg-form {
-    margin: 0 1em;
-    padding: 0;
-    display: none;
 }
 
 /*VARIOUS "CLASS" ELEMENTS ARE BELOW*/
-.page-title {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
-    background: #F2E9CE; /*lighter tan*/
-    background: #F2E2C4; /*darker tan*/
-    background: #F2D4C2; /*Curset pinkish*/
-    border-top: 2px solid #012611;
-    border-bottom: 2px solid #012611;
-    flex: initial; /*flex: 0 1 auto*/
-}
-
 .page-intro {
     width: 90%;
     margin: 0;
@@ -297,41 +145,39 @@ textarea {
     flex: initial; /*flex: 0 1 auto*/
 }
 
-.page-nav {
+.search {
+    width: 90%;
+    margin: 0;
+    padding: 0 5% 1em 5%;
+    border-bottom: 2px solid #012611;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+.page-content {
     width: 100%;
-    height: 26vh;
-    margin: 0.5em 0;
+    margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
 }
 
-/*This is placeholder style*/
-.sample {
-  width: 100%;
-}
-
-.fees-sched {
+.park {
     width: 90%;
-    margin: 0;
-    padding: 0 5%;
-    background: #f2f2f2; /*grey*/
+    margin: 0.5em 0;
+    padding: 0.5em 5%;
+    border-bottom: 2px solid #012611;
     flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
-.pool {
-    width: 90%;
-    margin: 0;
-    padding: 1em 5%;
-    border-bottom: 1px solid #eee; /*grey 200*/
-    flex: initial; /*flex: 0 1 auto*/
-}
-
-.pool:last-child {
-    border: none;
+.park:last-child {
+    border-bottom: none;
 }
 
 /*TRANSITIONS ARE BELOW*/
@@ -368,31 +214,6 @@ textarea {
     transition: all 1s ease-out;
 }
 
-/*ANIMATIONS ARE BELOW*/
-/*flashes form's "message sent!" text*/
-@keyframes flashMessage {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.flash-msg {
-  animation: flashMessage 4s ease-in-out 100ms 1 normal both;
-}
-
-/*Shorthand Notes: [animation-name] [animation-duration] [animation-timing-function]
-[animation-delay] [animation-iteration-count] [animation-direction]
-animation-fill-mode*/
-
 /*FONTS STYLES ARE BELOW*/
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -422,27 +243,14 @@ h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.2;
     font-weight: 600;
+    margin-bottom: 0.5em;
+    width: 100%;
 }
 
 button.nav {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 2.0;
     font-weight: 600;
-}
-
-button.regular {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #000;
-}
-
-button.notes {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #0e4996; /*dark blue*/
-    margin-bottom: 0;
 }
 
 figcaption {
@@ -452,64 +260,29 @@ figcaption {
     color: #616161; /*grey 700*/
 }
 
-p, label, input, textarea {
+p, input {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.8;
     font-weight: 400;
 }
 
-li {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    position: relative;
-}
-
-p a, li a {
+p a {
     color: #0e4996; /*dark blue*/
     text-decoration: none;
 }
 
-p a:hover, li a:hover {
+p a:hover {
     color: #0e4996; /*dark blue*/
     text-decoration: underline;
     cursor: pointer;
 }
 
-p.link-like {
-    color: #0e4996; /*dark blue*/
-}
-
-p.link-like:hover {
-    color: #0e4996; /*dark blue*/
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.fees-sched p {
-    line-height: 1.5;
+.park p {
     margin-top: 0;
-}
-
-.pool p {
-    line-height: 1.5;
 }
 
 footer p {
   color: #fff;
-}
-
-/*positions handicapped icon at end of pool dimensions line.*/
-span.accessible {
-    position: absolute;
-    bottom: 0;
-    right: auto;
-}
-
-span.flash {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
 }
 
 /*FONTS MEDIA QUERIES ARE BELOW*/
@@ -531,24 +304,12 @@ span.flash {
         font-size: .8125em; /*13px*/
     }
 
-    button.regular, button.notes {
-        font-size: .75em; /*12px*/
-    }
-
     figcaption {
         font-size: .75em; /*12px*/
     }
 
-    p, label, input, textarea {
+    p, input {
         font-size: .875em; /*14px*/
-    }
-
-    li {
-        font-size: .8125em; /*13px*/
-    }
-
-    span.flash {
-        font-size: .75em; /*12px*/
     }
 }
 
@@ -565,24 +326,12 @@ span.flash {
         font-size: .875em; /*14px*/
     }
 
-    button.regular, button.notes {
-        font-size: .8125em; /*13px*/
-    }
-
     figcaption {
         font-size: .8125em; /*13px*/
     }
 
-    p, label, input, textarea {
+    p, input {
         font-size: .9375em; /*15px*/
-    }
-
-    li {
-        font-size: .875em; /*14px*/
-    }
-
-    span.flash {
-        font-size: .8125em; /*13px*/
     }
 }
 
@@ -599,24 +348,12 @@ span.flash {
         font-size: .875em; /*14px*/
     }
 
-    button.regular, button.notes {
-        font-size: .875em; /*14px*/
-    }
-
     figcaption {
         font-size: .875em; /*14px*/
     }
 
-    p, label, input, textarea {
+    p, input {
         font-size: 1em; /*16px*/
-    }
-
-    li {
-        font-size: .875em; /*14px*/
-    }
-
-    span.flash {
-        font-size: .875em; /*14px*/
     }
 }
 
@@ -633,24 +370,12 @@ span.flash {
         font-size: 1em; /*16px*/
     }
 
-    button.regular, button.notes {
-        font-size: .9375em; /*15px*/
-    }
-
     figcaption {
         font-size: .9375em; /*15px*/
     }
 
-    p, label, input, textarea {
+    p, input {
         font-size: 1.1em; /*17.6px*/
-    }
-
-    li {
-        font-size: 1em; /*16px*/
-    }
-
-    span.flash {
-        font-size: .9375em; /*15px*/
     }
 }
 
