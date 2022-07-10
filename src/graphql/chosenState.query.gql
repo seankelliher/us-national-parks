@@ -5,6 +5,8 @@
 query getChosenState($search: String) {
     chosenState(search: $search) {
         id
+        image
+        caption
         name
         regions
         states

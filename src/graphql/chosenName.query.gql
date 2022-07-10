@@ -5,6 +5,8 @@
 query getChosenName($search: String) {
     chosenName(search: $search) {
         id
+        image
+        caption
         name
         regions
         states

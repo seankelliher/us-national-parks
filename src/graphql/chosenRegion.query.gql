@@ -7,6 +7,8 @@
 query getChosenRegion($search: String) {
     chosenRegion(search: $search) {
         id
+        image
+        caption
         name
         regions
         states
