@@ -14,6 +14,8 @@ const typeDefs = gql`
     # This object has five fields: id, name, region, state, website.
     type Park {
         id: ID,
+        image: String,
+        caption: String,
         name: String,
         regions: [String],
         states: [String],
