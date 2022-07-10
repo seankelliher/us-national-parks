@@ -2,28 +2,38 @@
     <section>
         <PageIntro
             title="Parks By State"
-            intro="There are National Parks in 32 US states and in the U.S. territory of American Samoa."
+            intro="There are National Parks in 32 states and American Samoa."
         />
 
-        <div class="sample">
-            <h3>Search for your park by state</h3>
-            <input
-                v-model="searchTerm"
-                type="text"
-                name="search-term"
-            >
+        <div class="page-content">
+            <div class="search">
+                <h3>Search for your park by state</h3>
+                <input
+                    v-model="searchTerm"
+                    type="text"
+                    name="search-term"
+                >
+            </div>
             <p v-if="loading">
                 Loading...
             </p>
             <p v-else-if="error">
                 Something went wrong! Please try again.
             </p>
+            
             <template v-else>
                 <div
                     v-for="park in parks"
                     :key="park.id"
-                    class="sample"
+                    class="park"
                 >
+                    <figure class="park-image">
+                        <img
+                            :src="`${imageUrl}${park.image}.jpg`"
+                            :alt="park.caption"
+                        >
+                        <figcaption>{{ park.caption }}</figcaption>
+                    </figure>
                     <h3>{{ park.name }}</h3>
                     <p>
                         <strong>State: </strong>
@@ -87,7 +97,9 @@ export default {
 
         const parks = computed(() => result.value?.chosenState ?? []);
 
-        return { parks, searchTerm, loading, error };
+        const imageUrl = new URL("../assets/images/", import.meta.url).href;
+
+        return { parks, searchTerm, loading, error, imageUrl};
     }
 };
 //NOTES FOR APOLLO CLIENT: 
