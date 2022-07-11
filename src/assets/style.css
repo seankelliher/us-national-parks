@@ -25,7 +25,8 @@ header {
     width: 90%;
     margin: 0;
     padding: 0.5em 5%;
-    background: #01401C; /*Curset green*/
+    background: #01401c; /*curset green*/
+    background: #010b40; /*very dark blue*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
@@ -33,7 +34,10 @@ nav {
     width: 90%;
     margin: 0;
     padding: 0.25em 5%;
-    background: #F2CB05; /*Curset yellow*/
+    /*background: #f2cb05; curset yellow*/
+    background: #d5eaf2; /*sky blue*/
+    border-top: 2px solid #010b40;
+    border-bottom: 2px solid #010b40;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -52,7 +56,7 @@ section {
     align-items: flex-start; /*cross axis*/
 }
 
-@media all and (min-width: 300px) {
+/*@media all and (min-width: 300px) {
     section {
         border-right: none;
         border-left: none;
@@ -61,10 +65,10 @@ section {
 
 @media all and (min-width: 600px) {
     section {
-        border-right: 1px solid #eee; /*grey 200*/
-        border-left: 1px solid #eee; /*grey 200*/
+        border-right: 1px solid #f5f5f5;
+        border-left: 1px solid #f5f5f5;
     }
-}
+}*/
 
 figure.logo {
     width: 30%;
@@ -121,16 +125,16 @@ input[type="text"] {
     width: 100%;
     margin: 0.5em 0;
     padding: 0;
+    border: 2px solid #eee;
 }
 
 /*VARIOUS "CLASS" ELEMENTS ARE BELOW*/
 .page-intro {
     width: 90%;
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 0.5em 5%;
-    background: #F2D4C2; /*Curset pinkish*/
-    border-top: 2px solid #012611;
-    border-bottom: 2px solid #012611;
+    background: #fafafa;
+    border:  2px solid #f5f5f5;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -147,9 +151,16 @@ input[type="text"] {
 
 .search {
     width: 90%;
-    margin: 0;
+    margin: 1em 0;
     padding: 0 5% 1em 5%;
-    border-bottom: 2px solid #012611;
+    border: 2px solid #eee;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+.search-messages {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
     flex: initial; /*flex: 0 1 auto*/
 }
 
@@ -166,9 +177,10 @@ input[type="text"] {
 
 .park {
     width: 90%;
-    margin: 0.5em 0;
-    padding: 0.5em 5%;
-    border-bottom: 2px solid #012611;
+    margin: 1em 0;
+    padding: 1em 5%;
+    background: #fafafa;
+    border: 1px solid #f5f5f5;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -225,6 +237,7 @@ h1 {
 
 h1 a {
     color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
