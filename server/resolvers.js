@@ -514,7 +514,7 @@ const parks = [
     },
     {
         id: "wica",
-        image: "wica-bison-highland-park-creek",
+        image: "wica-bison-highland-creek-trail",
         caption: "A bison on the trail. Photo: NPS, Bill Schreier.",
         name: "Wind Cave National Park",
         regions: ["Midwest region"],
@@ -575,8 +575,9 @@ const resolvers = {
         //allParks: ($name) => parks, (With no search capability. Check schema too.)
         chosenName: (_, { search }) => {
             let park = parks.filter((park) =>
-                park.name.toLowerCase().includes( search.toLowerCase() )
-            );
+                park.name.toLowerCase().includes( search.toLowerCase()
+            )
+        );
             return park;
         },
         /*chosenPark: (_, args) => {
@@ -587,8 +588,8 @@ const resolvers = {
         chosenState: (_, { search }) => {
             let park = parks.filter((park) =>
                 park.states.map((state) =>
-                    state.substring(0, 7).toLowerCase()).includes(
-                        search.substring(0, 7).toLowerCase()
+                    state.substring(0, search.length).toLowerCase()).includes(
+                        search.substring(0, search.length).toLowerCase()
                     )
             ); 
             return park;
@@ -596,8 +597,8 @@ const resolvers = {
         chosenRegion: (_, { search }) => {
             let park = parks.filter((park) =>
                 park.regions.map((region) =>
-                    region.substring(0, 2).toLowerCase()).includes(
-                        search.substring(0, 2).toLowerCase()
+                    region.substring(0, search.length).toLowerCase()).includes(
+                        search.substring(0, search.length).toLowerCase()
                     )
             );
             return park;
@@ -608,8 +609,5 @@ const resolvers = {
 module.exports = resolvers;
 
 //NOTES ON SUB_STRINGS.
-//In chosenState, (0, 7) deciphers overlaps like North Carolina, North Dakota.
-//Shorter states like Ohio and Utah still okay.
-//In chosenRegion, there is little overlap so (0, 2) works fine.
 //Without substrings, search works. But user forced to type full term.
 //For example, all of "North Carolina".
