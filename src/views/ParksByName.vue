@@ -12,16 +12,38 @@
                     v-model="searchTerm"
                     type="text"
                     name="search-term"
+                    placeholder="Eg., Yellowstone"
                 >
             </div>
-            <p v-if="loading">
+
+            <p
+                v-if="loading"
+                class="search-messages"
+            >
                 Loading...
             </p>
-            <p v-else-if="error">
+
+            <p
+                v-else-if="error"
+                class="search-messages"
+            >
                 Something went wrong! Please try again.
             </p>
 
             <template v-else>
+                <p class="search-messages">
+                    <span
+                        v-if="searchTerm!=='' && parks.length===1"
+                    >   
+                        {{ parks.length }} result for "{{ searchTerm }}"
+                    </span>
+                    <span
+                        v-if="searchTerm!=='' && parks.length!==1"
+                    >
+                        {{ parks.length }} results for "{{ searchTerm }}"
+                    </span>
+                </p>
+
                 <div
                     v-for="park in parks"
                     :key="park.id"
@@ -34,7 +56,9 @@
                         >
                         <figcaption>{{ park.caption }}</figcaption>
                     </figure>
+
                     <h3>{{ park.name }}</h3>
+
                     <p>
                         <strong>State: </strong>
                         <span
@@ -75,7 +99,6 @@ import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
 import CHOSEN_NAME_QUERY from "@/graphql/chosenName.query.gql";
 
-
 export default {
     name: "ParksByName",
     components: {
@@ -91,7 +114,7 @@ export default {
             () => (
                 {
                     debounce: 500, //half second after user stops typing.
-                    enabled: searchTerm.value.length > 2 //3 or more characters.
+                    enabled: searchTerm.value.length > 3 //4 or more characters.
                 }
             )
         );

@@ -12,16 +12,38 @@
                     v-model="searchTerm"
                     type="text"
                     name="search-term"
+                    placeholder="Eg., California"
                 >
             </div>
-            <p v-if="loading">
+
+            <p
+                v-if="loading"
+                class="search-messages"
+            >
                 Loading...
             </p>
-            <p v-else-if="error">
+
+            <p
+                v-else-if="error"
+                class="search-messages"
+            >
                 Something went wrong! Please try again.
             </p>
             
             <template v-else>
+                <p class="search-messages">
+                    <span
+                        v-if="searchTerm!=='' && parks.length===1"
+                    >   
+                        {{ parks.length }} result for "{{ searchTerm }}"
+                    </span>
+                    <span
+                        v-if="searchTerm!=='' && parks.length!==1"
+                    >
+                        {{ parks.length }} results for "{{ searchTerm }}"
+                    </span>
+                </p>
+
                 <div
                     v-for="park in parks"
                     :key="park.id"
@@ -34,7 +56,9 @@
                         >
                         <figcaption>{{ park.caption }}</figcaption>
                     </figure>
+
                     <h3>{{ park.name }}</h3>
+
                     <p>
                         <strong>State: </strong>
                         <span
@@ -90,7 +114,7 @@ export default {
             () => (
                 {
                     debounce: 500,
-                    enabled: searchTerm.value.length > 2 //3 or more characters.
+                    enabled: searchTerm.value.length > 3 //4 or more characters.
                 }
             )
         );
@@ -109,4 +133,3 @@ export default {
 //Create a const to house flags, return them, & display them in template.
 //useResult deprecated. Use computed properties instead. Both extract only data.
 </script>
-
