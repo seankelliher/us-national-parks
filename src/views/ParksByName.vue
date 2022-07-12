@@ -62,18 +62,18 @@
                     <p>
                         <strong>State: </strong>
                         <span
-                            v-for="state in park.states"
+                            v-for="state in park.states.join(', ')"
                             :key="state.index"
                         >
-                            {{ state }}, 
+                            {{ state }}
                         </span>
                         <br>
                         <strong>Region: </strong> 
                         <span
-                            v-for="region in park.regions"
+                            v-for="region in park.regions.join(', ')"
                             :key="region.index"
                         >
-                            {{ region }}, 
+                            {{ region }}
                         </span><br>
                         <span>
                             <strong>Website:</strong>  
