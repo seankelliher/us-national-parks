@@ -90,11 +90,15 @@ figcaption {
     padding: 0;
 }
 
+ol {
+    columns: 2;
+}
+
 footer {
     width: 90%;
     margin: 0;
     padding: 1em 5%;
-    background: #000;
+    background: #010b40; /*very dark blue*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
@@ -118,6 +122,11 @@ button.nav a {
 button.nav a.router-link-exact-active {
     color: #000;
     text-decoration: underline;
+}
+
+button.hint {
+    background: transparent;
+    border: none;
 }
 
 /*FORM ELEMENTS ARE BELOW*/
@@ -190,6 +199,23 @@ input[type="text"] {
 
 .park:last-child {
     border-bottom: none;
+}
+
+.help-box {
+    width: 90%;
+    margin: 1em 0;
+    padding: 0 5% 1em 5%;
+    background: #fafafa;
+    background: #d5eaf2; /*sky blue*/
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+.map-box {
+    width: 90%;
+    margin: 1em 0;
+    padding: 1em 5%;
+    background: #fafafa;
+    flex: initial; /*flex: 0 1 auto*/
 }
 
 /*TRANSITIONS ARE BELOW*/
@@ -273,7 +299,7 @@ figcaption {
     color: #616161; /*grey 700*/
 }
 
-p, input {
+p, input, li {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.8;
     font-weight: 400;
@@ -321,7 +347,7 @@ footer p {
         font-size: .75em; /*12px*/
     }
 
-    p, input {
+    p, input, li {
         font-size: .875em; /*14px*/
     }
 }
@@ -343,7 +369,7 @@ footer p {
         font-size: .8125em; /*13px*/
     }
 
-    p, input {
+    p, input, li {
         font-size: .9375em; /*15px*/
     }
 }
@@ -365,7 +391,7 @@ footer p {
         font-size: .875em; /*14px*/
     }
 
-    p, input {
+    p, input, li {
         font-size: 1em; /*16px*/
     }
 }
@@ -387,7 +413,7 @@ footer p {
         font-size: .9375em; /*15px*/
     }
 
-    p, input {
+    p, input, li {
         font-size: 1.1em; /*17.6px*/
     }
 }
