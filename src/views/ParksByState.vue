@@ -88,12 +88,18 @@
                 </div>
             </template>
         </div>
+        <HelpBox
+            title="Need Some Help?"
+            text="Not every state has a National Park. These are the states and territories that do:"
+            :list-items="listItems"
+        />
     </section>
 </template>
 
 <script>
 import { ref } from "vue";
 import PageIntro from "@/components/PageIntro.vue";
+import HelpBox from "@/components/HelpBox.vue";
 
 import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
@@ -102,7 +108,8 @@ import CHOSEN_STATE_QUERY from "@/graphql/chosenState.query.gql";
 export default {
     name: "ParksByState",
     components: {
-        PageIntro
+        PageIntro,
+        HelpBox
     },
     setup() {
         const searchTerm = ref("");
@@ -124,6 +131,11 @@ export default {
         const imageUrl = new URL("../assets/images/", import.meta.url).href;
 
         return { parks, searchTerm, loading, error, imageUrl};
+    },
+    data() {
+        return {
+            listItems: ["Alaska", "American Samoa", "Arizona", "Arkansas", "California", "Colorado", "Florida", "Hawaii", "Idaho", "Indiana", "Kentucky", "Maine", "Michigan", "Minnesota", "Missouri", "Montana", "Nevada", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oregon", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Virgin Islands", "Virginia", "Washington", "West Virginia", "Wyoming"]
+        };
     }
 };
 //NOTES FOR APOLLO CLIENT: 

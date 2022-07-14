@@ -88,12 +88,20 @@
                 </div>
             </template>
         </div>
+        <HelpBox
+            title="Need Some Help?"
+            text="The National Park Service's seven regions are:"
+            :list-items="listItems"
+        />
+        <MapBox />
     </section>
 </template>
 
 <script>
 import { ref } from "vue";
 import PageIntro from "@/components/PageIntro.vue";
+import HelpBox from "@/components/HelpBox.vue";
+import MapBox from "@/components/MapBox.vue";
 
 import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
@@ -102,7 +110,9 @@ import CHOSEN_REGION_QUERY from "@/graphql/chosenRegion.query.gql";
 export default {
     name: "ParksByRegion",
     components: {
-        PageIntro
+        PageIntro,
+        HelpBox,
+        MapBox
     },
     setup() {
         const searchTerm = ref("");
@@ -124,6 +134,11 @@ export default {
         const imageUrl = new URL("../assets/images/", import.meta.url).href;
 
         return { parks, searchTerm, loading, error, imageUrl};
+    },
+    data() {
+        return {
+            listItems: ["Alaska", "Intermountain", "Midwest", "National Capital", "Northeast", "Pacific West", "Southeast"]
+        };
     }
 };
 //NOTES FOR APOLLO CLIENT: 

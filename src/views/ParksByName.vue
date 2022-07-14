@@ -12,7 +12,7 @@
                     v-model="searchTerm"
                     type="text"
                     name="search-term"
-                    placeholder="Eg., Yellowstone"
+                    placeholder="Eg., Yellowstone."
                 >
             </div>
 
@@ -88,12 +88,18 @@
                 </div>
             </template>
         </div>
+        <HelpBox
+            title="Need Some Help?"
+            text="Below is a list of parks. Or type 'park' into the search bar' to get all parks."
+            :list-items="listItems"
+        />
     </section>
 </template>
 
 <script>
 import { ref } from "vue";
 import PageIntro from "@/components/PageIntro.vue";
+import HelpBox from "@/components/HelpBox.vue";
 
 import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
@@ -102,7 +108,8 @@ import CHOSEN_NAME_QUERY from "@/graphql/chosenName.query.gql";
 export default {
     name: "ParksByName",
     components: {
-        PageIntro
+        PageIntro,
+        HelpBox
     },
     setup() {
         const searchTerm = ref("");
@@ -124,6 +131,11 @@ export default {
         const imageUrl = new URL("../assets/images/", import.meta.url).href;
 
         return { parks, searchTerm, loading, error, imageUrl};
+    },
+    data() {
+        return{
+            listItems: ["Acadia ", "Arches ", "Badlands ", "Big Bend ", "Biscayne ", "Black Canyon", "Bryce Canyon ", "Canyonlands ", "Capitol Reef ", "Carlsbad Caverns ", "Channel Islands ", "Congaree ", "Crater Lake ", "Cuyahoga Valley ", "Death Valley ", "Denali ", "Dry Tortugas ", "Everglades ", "Gates of the Arctic", "Gateway Arch ", "Glacier Bay", "Glacier ", "Grand Canyon ", "Grand Teton ", "Great Basin ", "Great Sand Dunes", "Great Smoky Mountains ", "Guadalupe Mountains ", "Haleakalā ", "Hawai‘i Volcanoes ", "Hot Springs ", "Indiana Dunes ", "Isle Royale ", "Joshua Tree ", "Katmai", "Kenai Fjords ", "Kobuk Valley ", "Lake Clark", "Lassen Volcanic ", "Mammoth Cave ", "Mesa Verde ", "Mount Rainier ", "American Samoa", "New York Harbor", "New River Gorge", "North Cascades ", "Olympic ", "Petrified Forest ", "Pinnacles ", "Rocky Mountain ", "Saguaro ", "Sequoia & Kings Canyon ", "Shenandoah ", "Theodore Roosevelt ", "Virgin Islands ", "Voyageurs ", "White Sands ", "Wind Cave ", "Wolf Trap", "Wrangell - St. Elias", "Yellowstone ", "Yosemite ", "Zion "]
+        };
     }
 };
 //NOTES FOR APOLLO CLIENT: 
