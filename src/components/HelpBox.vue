@@ -1,8 +1,16 @@
 <template>
     <div class="help-box">
         <h3>{{ title }}</h3>
-        <p>{{ text }}</p>
-        <ol>
+        <p>
+            {{ text }}
+            <span
+                class="link"
+                @click="listArea = !listArea"
+            >
+                {{ link }}
+            </span>
+        </p>
+        <ol v-if="listArea">
             <li
                 v-for="listItem in listItems"
                 :key="listItem"
@@ -25,6 +33,11 @@ export default {
             type: String,
             required: true
         },
+        link: {
+            type: String,
+            required: false,
+            default: "Click here for details."
+        },
         listItems: {
             type: Array,
             required: false,
@@ -32,6 +45,11 @@ export default {
                 return [];
             }
         }
+    },
+    data() {
+        return {
+            listArea: false
+        };
     }
 };
 </script>
