@@ -90,7 +90,8 @@
         </div>
         <HelpBox
             title="Need Some Help?"
-            text="Below is a list of parks. Or type 'park' into the search bar' to get all parks."
+            text="Type 'park' into the search bar' to get all parks or"
+            link="see this list."
             :list-items="listItems"
         />
     </section>

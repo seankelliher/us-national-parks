@@ -90,7 +90,8 @@
         </div>
         <HelpBox
             title="Need Some Help?"
-            text="The National Park Service's seven regions are:"
+            text="These are the National Parks Service's"
+            link="seven regions."
             :list-items="listItems"
         />
         <MapBox />

@@ -90,7 +90,8 @@
         </div>
         <HelpBox
             title="Need Some Help?"
-            text="Not every state has a National Park. These are the states and territories that do:"
+            text="Not every state has a National Park. These are the"
+            link="states and territories that do."
             :list-items="listItems"
         />
     </section>
