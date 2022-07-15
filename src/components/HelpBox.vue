@@ -10,15 +10,22 @@
                 {{ link }}
             </span>
         </p>
-        <ol v-if="listArea">
-            <li
-                v-for="listItem in listItems"
-                :key="listItem"
-            >
-                {{ listItem }}
-            </li>
-        </ol>
     </div>
+    <Transition name="slide-up-fade-in-out">
+        <div
+            v-if="listArea"
+            class="help-box-list"
+        >
+            <ol>
+                <li
+                    v-for="listItem in listItems"
+                    :key="listItem"
+                >
+                    {{ listItem }}
+                </li>
+            </ol>
+        </div>
+    </Transition>
 </template>
 
 <script>
