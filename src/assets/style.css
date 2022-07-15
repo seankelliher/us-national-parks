@@ -20,12 +20,18 @@ img {
     align-items: flex-start; /*cross axis*/
 }
 
+/*sticky footer test*/
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 /*MAIN SEMANTIC ELEMENTS ARE BELOW*/
 header {
     width: 90%;
     margin: 0;
     padding: 0.5em 5%;
-    background: #01401c; /*curset green*/
     background: #010b40; /*very dark blue*/
     flex: initial; /*flex: 0 1 auto*/
 }
@@ -46,6 +52,18 @@ nav {
 }
 
 section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+    flex: 1; /*sticky footer test*/
+}
+
+aside {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -77,7 +95,7 @@ figure.logo {
     flex: initial; /*flex: 0 1 auto*/
 }
 
-figure.park-image {
+figure.full {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -91,6 +109,7 @@ figcaption {
 }
 
 ol {
+    width:  100%;
     columns: 2;
 }
 
@@ -103,7 +122,7 @@ footer {
 }
 
 /*BUTTON ELEMENTS ARE BELOW*/
-/*button for nav: BK, BX, MN, QN, SI*/
+/*button for nav: By Name, By Region, By State*/
 button.nav {
     /*background: #4b5e26; NPS button green*/
     background: none;
@@ -124,10 +143,29 @@ button.nav a.router-link-exact-active {
     text-decoration: underline;
 }
 
-button.hint {
+/*button for homepage: Search by...*/
+button.large {
+    width: 60%;
+    margin: 1em 0;
+    padding: 1em 5%;
+    background: #010b40; /*very dark blue*/
+    background: #BF5D39; /*curset green*/
+    border: none;
+    border-radius: 6px;
+    flex: initial; /*flex: 0 1 auto*/
+    cursor: pointer;
+}
+
+button.large a {
+    /*color: #fff;*/
+    color: #fff;
+    text-decoration: none;
+}
+
+/*button.hint {
     background: transparent;
     border: none;
-}
+}*/
 
 /*FORM ELEMENTS ARE BELOW*/
 input[type="text"] {
@@ -158,6 +196,19 @@ input[type="text"] {
     flex: initial; /*flex: 0 1 auto*/
 }
 
+.home-page {
+    width: 90%;
+    margin: 0 0 1em 0;
+    padding: 1em 5%;
+    /*background: #fafafa;*/
+    /*border: 2px solid #f5f5f5;*/
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; /*main axis*/
+    align-items: center; /*cross axis*/
+}
+
 .search {
     width: 90%;
     margin: 1em 0;
@@ -171,17 +222,6 @@ input[type="text"] {
     margin: 0;
     padding: 0 5%;
     flex: initial; /*flex: 0 1 auto*/
-}
-
-.page-content {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
 }
 
 .park {
@@ -203,53 +243,64 @@ input[type="text"] {
 
 .help-box {
     width: 90%;
-    margin: 1em 0;
-    padding: 0 5% 1em 5%;
-    background: #fafafa;
+    margin: 1em 0 0 0;
+    padding: 0 5%;
     background: #d5eaf2; /*sky blue*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
-.map-box {
+.help-box-list {
     width: 90%;
-    margin: 1em 0;
+    margin: 0;
     padding: 1em 5%;
     background: #fafafa;
     flex: initial; /*flex: 0 1 auto*/
 }
 
+.map-box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid #f5f5f5;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
+.map-box-title {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+    background: #d5eaf2; /*sky blue*/
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+.map-box-map {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+    background: #fafafa;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
 /*TRANSITIONS ARE BELOW*/
-/*Content fades in and slides left*/
-/*Used on PageTitle*/
-.fade-in-slide-left-enter-from {
+/*Content slides up and fades in, later fades out*/
+/*Used on HelpBox.vue and MapBox.vue*/
+.slide-up-fade-in-out-enter-from {
     opacity: 0;
-    transform: translateX(10px);
+    transform: translateY(10px);
 }
 
-.fade-in-slide-left-enter-enter-to {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.fade-in-slide-left-enter-active {
-    transition: all 1s ease-out;
-}
-
-/*Content slides down and fades in, later fades out*/
-/*Used on FeesSchedule and PoolCard*/
-.slide-down-fade-in-out-enter-from {
-    opacity: 0;
-    transform: translateY(-10px);
-}
-
-.slide-down-fade-in-out-leave-to {
+.slide-up-fade-in-out-leave-to {
     opacity: 0;
     transform: translateY(0);
 }
 
-.slide-down-fade-in-out-enter-active,
-.slide-down-fade-in-out-leave-active {
-    transition: all 1s ease-out;
+.slide-up-fade-in-out-enter-active,
+.slide-up-fade-in-out-leave-active {
+    transition: all 1.5s ease-out;
 }
 
 /*FONTS STYLES ARE BELOW*/
@@ -287,6 +338,12 @@ h3 {
 }
 
 button.nav {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2.0;
+    font-weight: 600;
+}
+
+button.large {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 2.0;
     font-weight: 600;
@@ -335,7 +392,7 @@ footer p {
         font-size: 1em; /*16px*/
     }
 
-    h3 {
+    h3, button.large {
         font-size: .9375em; /*15px*/
     }
 
@@ -357,7 +414,7 @@ footer p {
         font-size: 1.2em; /*19.2px*/
     }
 
-    h3 {
+    h3, button.large {
         font-size: 1em; /*16px*/
     }
 
@@ -379,7 +436,7 @@ footer p {
         font-size: 1.4em; /*22.4px*/
     }
 
-    h3 {
+    h3, button.large {
         font-size: 1.1em; /*17.6px*/
     }
 
@@ -401,7 +458,7 @@ footer p {
         font-size: 1.6em; /*25.6px*/
     }
 
-    h3 {
+    h3, button.large {
         font-size: 1.2em; /*19.2px*/
     }
 
@@ -427,6 +484,17 @@ footer p {
 /*makes font green*/
 .compliment {
     color: #277332; /*dark green*/
+}
+
+/*makes text same format as "a ref"*/
+.link {
+    color: #0e4996; /*dark blue*/
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /*Note: Setting font styles for "select" or "option" in the form's pull-down
