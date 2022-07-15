@@ -2,9 +2,28 @@
     <section>
         <PageIntro
             title="Welcome"
-            intro="This is sample intro text. A lacus vestibulum sed arcu non odio. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi."
+            intro="Since 1916, the National Park Service has safeguarded America's national parks and welcomed more than 318 million visitors every year."
         />
-        <p>Text content can go here, if needed.</p>
+
+        <div class="home-page">
+            <button class="large">
+                <router-link to="/parks-by-name">
+                    Search Parks by Name
+                </router-link>
+            </button>
+
+            <button class="large">
+                <router-link to="/parks-by-region">
+                    Search Parks by Region
+                </router-link>
+            </button>
+
+            <button class="large">
+                <router-link to="/parks-by-state">
+                    Search Parks by State
+                </router-link>
+            </button>
+        </div>
     </section>
 </template>
 
