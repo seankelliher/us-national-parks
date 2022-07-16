@@ -60,24 +60,15 @@
 
                 <p>
                     <strong>State: </strong>
-                    <span
-                        v-for="state in park.states.join(', ')"
-                        :key="state.index"
-                    >
-                        {{ state }}
-                    </span>
+                    <span>{{ park.states.join(', ') }} </span>
                     <br>
                     <strong>Region: </strong> 
-                    <span
-                        v-for="region in park.regions.join(', ')"
-                        :key="region.index"
-                    >
-                        {{ region }}
-                    </span><br>
+                    <span>{{ park.regions.join(', ') }} </span>
+                    <br>
                     <span>
                         <strong>Website:</strong>  
                         <a
-                            href="`{{ park.website }}`"
+                            :href="`${park.website}`"
                             target="_blank"
                         >
                             website
