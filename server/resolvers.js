@@ -17,7 +17,7 @@ const parks = [
         regions: ["Intermountain"],
         states: ["Utah"],
         website: "https://www.nps.gov/arch/index.htm",
-        favorite: true
+        favorite: false
     },
     {
         id: "badl",
@@ -207,7 +207,7 @@ const parks = [
         regions: ["Alaska"],
         states: ["Alaska"],
         website: "https://www.nps.gov/glba/index.htm",
-        favorite: true
+        favorite: false
     },
     {
         id: "glac",
@@ -607,7 +607,7 @@ const parks = [
         regions: ["Intermountain", "Pacific West"],
         states: ["Idaho", "Montana", "Wyoming"],
         website: "https://www.nps.gov/yell/index.htm",
-        favorite: true
+        favorite: false
     },
     {
         id: "yose",
