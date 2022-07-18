@@ -6,7 +6,8 @@ const parks = [
         name: "Acadia National Park",
         regions: ["Northeast"],
         states: ["Maine"],
-        website: "https://www.nps.gov/acad/index.htm"
+        website: "https://www.nps.gov/acad/index.htm",
+        favorite: false
     },
     {
         id: "arch",
@@ -15,7 +16,8 @@ const parks = [
         name: "Arches National Park",
         regions: ["Intermountain"],
         states: ["Utah"],
-        website: "https://www.nps.gov/arch/index.htm"
+        website: "https://www.nps.gov/arch/index.htm",
+        favorite: true
     },
     {
         id: "badl",
@@ -24,7 +26,8 @@ const parks = [
         name: "Badlands National Park",
         regions: ["Midwest"],
         states: ["South Dakota"],
-        website: "https://www.nps.gov/badl/index.htm"
+        website: "https://www.nps.gov/badl/index.htm",
+        favorite: false
     },
     {
         id: "bibe",
@@ -33,7 +36,8 @@ const parks = [
         name: "Big Bend National Park",
         regions: ["Intermountain"],
         states: ["Texas"],
-        website: "https://www.nps.gov/bibe/index.htm"
+        website: "https://www.nps.gov/bibe/index.htm",
+        favorite: false
     },
     {
         id: "bisc",
@@ -42,7 +46,8 @@ const parks = [
         name: "Biscayne National Park",
         regions: ["Southeast"],
         states: ["Florida"],
-        website: "https://www.nps.gov/bisc/index.htm"
+        website: "https://www.nps.gov/bisc/index.htm",
+        favorite: false
     },
     {
         id: "blca",
@@ -51,7 +56,8 @@ const parks = [
         name: "Black Canyon of the Gunnison National Park",
         regions: ["Intermountain"],
         states: ["Colorado"],
-        website: "https://www.nps.gov/blca/index.htm"
+        website: "https://www.nps.gov/blca/index.htm",
+        favorite: false
     },
     {
         id: "brca",
@@ -60,7 +66,8 @@ const parks = [
         name: "Bryce Canyon National Park",
         regions: ["Intermountain"],
         states: ["Utah"],
-        website: "https://www.nps.gov/brca/index.htm"
+        website: "https://www.nps.gov/brca/index.htm",
+        favorite: false
     },
     {
         id: "cany",
@@ -69,7 +76,8 @@ const parks = [
         name: "Canyonlands National Park",
         regions: ["Intermountain"],
         states: ["Utah"],
-        website: "https://www.nps.gov/cany/index.htm"
+        website: "https://www.nps.gov/cany/index.htm",
+        favorite: false
     },
     {
         id: "care",
@@ -78,7 +86,8 @@ const parks = [
         name: "Capitol Reef National Park",
         regions: ["Intermountain"],
         states: ["Utah"],
-        website: "https://www.nps.gov/care/index.htm"
+        website: "https://www.nps.gov/care/index.htm",
+        favorite: false
     },
     {
         id: "cave",
@@ -87,7 +96,8 @@ const parks = [
         name: "Carlsbad Caverns National Park",
         regions: ["Intermountain"],
         states: ["New Mexico"],
-        website: "https://www.nps.gov/cave/index.htm"
+        website: "https://www.nps.gov/cave/index.htm",
+        favorite: false
     },
     {
         id: "chis",
@@ -96,7 +106,8 @@ const parks = [
         name: "Channel Islands National Park",
         regions: ["Pacific West"],
         states: ["California"],
-        website: "https://www.nps.gov/chis/index.htm"
+        website: "https://www.nps.gov/chis/index.htm",
+        favorite: false
     },
     {
         id: "cong",
@@ -105,7 +116,8 @@ const parks = [
         name: "Congaree National Park",
         regions: ["Southeast"],
         states: ["South Carolina"],
-        website: "https://www.nps.gov/cong/index.htm"
+        website: "https://www.nps.gov/cong/index.htm",
+        favorite: false
     },
     {
         id: "crla",
@@ -114,7 +126,8 @@ const parks = [
         name: "Crater Lake National Park",
         regions: ["Pacific West"],
         states: ["Oregon"],
-        website: "https://www.nps.gov/crla/index.htm"
+        website: "https://www.nps.gov/crla/index.htm",
+        favorite: false
     },
     {
         id: "cuva",
@@ -123,7 +136,8 @@ const parks = [
         name: "Cuyahoga Valley National Park",
         regions: ["Midwest"],
         states: ["Ohio"],
-        website: "https://www.nps.gov/cuva/index.htm"
+        website: "https://www.nps.gov/cuva/index.htm",
+        favorite: false
     },
     {
         id: "deva",
@@ -132,7 +146,8 @@ const parks = [
         name: "Death Valley National Park",
         regions: ["Pacific West"],
         states: ["California", "Nevada"],
-        website: "https://www.nps.gov/deva/index.htm"
+        website: "https://www.nps.gov/deva/index.htm",
+        favorite: false
     },
     {
         id: "dena",
@@ -141,7 +156,8 @@ const parks = [
         name: "Denali National Park",
         regions: ["Alaska"],
         states: ["Alaska"],
-        website: "https://www.nps.gov/dena/index.htm"
+        website: "https://www.nps.gov/dena/index.htm",
+        favorite: false
     },
     {
         id: "drto",
@@ -150,7 +166,8 @@ const parks = [
         name: "Dry Tortugas National Park",
         regions: ["Southeast"],
         states: ["Florida"],
-        website: "https://www.nps.gov/drto/index.htm"
+        website: "https://www.nps.gov/drto/index.htm",
+        favorite: false
     },
     {
         id: "ever",
@@ -159,7 +176,8 @@ const parks = [
         name: "Everglades National Park",
         regions: ["Southeast"],
         states: ["Florida"],
-        website: "https://www.nps.gov/ever/index.htm"
+        website: "https://www.nps.gov/ever/index.htm",
+        favorite: false
     },
     {
         id: "gaar",
@@ -168,7 +186,8 @@ const parks = [
         name: "Gates of the Arctic National Park & Preserve",
         regions: ["Alaska"],
         states: ["Alaska"],
-        website: "https://www.nps.gov/gaar/index.htm"
+        website: "https://www.nps.gov/gaar/index.htm",
+        favorite: false
     },
     {
         id: "jeff",
@@ -177,7 +196,8 @@ const parks = [
         name: "Gateway Arch National Park",
         regions: ["Midwest"],
         states: ["Missouri"],
-        website: "https://www.nps.gov/jeff/index.htm"
+        website: "https://www.nps.gov/jeff/index.htm",
+        favorite: false
     },
     {
         id: "glba",
@@ -186,7 +206,8 @@ const parks = [
         name: "Glacier Bay National Park & Preserve",
         regions: ["Alaska"],
         states: ["Alaska"],
-        website: "https://www.nps.gov/glba/index.htm"
+        website: "https://www.nps.gov/glba/index.htm",
+        favorite: true
     },
     {
         id: "glac",
@@ -195,7 +216,8 @@ const parks = [
         name: "Glacier National Park",
         regions: ["Intermountain"],
         states: ["Montana"],
-        website: "https://www.nps.gov/glac/index.htm"
+        website: "https://www.nps.gov/glac/index.htm",
+        favorite: false
     },
     {
         id: "grca",
@@ -204,7 +226,8 @@ const parks = [
         name: "Grand Canyon National Park",
         regions: ["Intermountain"],
         states: ["Arizona"],
-        website: "https://www.nps.gov/grca/index.htm"
+        website: "https://www.nps.gov/grca/index.htm",
+        favorite: false
     },
     {
         id: "grte",
@@ -213,7 +236,8 @@ const parks = [
         name: "Grand Teton National Park",
         regions: ["Intermountain"],
         states: ["Wyoming"],
-        website: "https://www.nps.gov/grte/index.htm"
+        website: "https://www.nps.gov/grte/index.htm",
+        favorite: false
     },
     {
         id: "grba",
@@ -222,7 +246,8 @@ const parks = [
         name: "Great Basin National Park",
         regions: ["Pacific West"],
         states: ["Nevada"],
-        website: "https://www.nps.gov/grba/index.htm"
+        website: "https://www.nps.gov/grba/index.htm",
+        favorite: false
     },
     {
         id: "grsa",
@@ -231,7 +256,8 @@ const parks = [
         name: "Great Sand Dunes National Park & Preserve",
         regions: ["Intermountain"],
         states: ["Colorado"],
-        website: "https://www.nps.gov/grsa/index.htm"
+        website: "https://www.nps.gov/grsa/index.htm",
+        favorite: false
     },
     {
         id: "grsm",
@@ -240,7 +266,8 @@ const parks = [
         name: "Great Smoky Mountains National Park",
         regions: ["Southeast"],
         states: ["North Carolina", "Tennessee"],
-        website: "https://www.nps.gov/grsm/index.htm"
+        website: "https://www.nps.gov/grsm/index.htm",
+        favorite: false
     },
     {
         id: "gumo",
@@ -249,7 +276,8 @@ const parks = [
         name: "Guadalupe Mountains National Park",
         regions: ["Intermountain"],
         states: ["Texas"],
-        website: "https://www.nps.gov/gumo/index.htm"
+        website: "https://www.nps.gov/gumo/index.htm",
+        favorite: false
     },
     {
         id: "hale",
@@ -258,7 +286,8 @@ const parks = [
         name: "Haleakalā National Park",
         regions: ["Pacific West"],
         states: ["Hawaii"],
-        website: "https://www.nps.gov/hale/index.htm"
+        website: "https://www.nps.gov/hale/index.htm",
+        favorite: false
     },
     {
         id: "havo",
@@ -267,7 +296,8 @@ const parks = [
         name: "Hawai‘i Volcanoes National Park",
         regions: ["Pacific West"],
         states: ["Hawaii"],
-        website: "https://www.nps.gov/havo/index.htm"
+        website: "https://www.nps.gov/havo/index.htm",
+        favorite: false
     },
     {
         id: "hosp",
@@ -276,7 +306,8 @@ const parks = [
         name: "Hot Springs National Park",
         regions: ["Midwest"],
         states: ["Arkansas"],
-        website: "https://www.nps.gov/hosp/index.htm"
+        website: "https://www.nps.gov/hosp/index.htm",
+        favorite: false
     },
     {
         id: "indu",
@@ -285,7 +316,8 @@ const parks = [
         name: "Indiana Dunes National Park",
         regions: ["Midwest"],
         states: ["Indiana"],
-        website: "https://www.nps.gov/indu/index.htm"
+        website: "https://www.nps.gov/indu/index.htm",
+        favorite: false
     },
     {
         id: "isro",
@@ -294,7 +326,8 @@ const parks = [
         name: "Isle Royale National Park",
         regions: ["Midwest"],
         states: ["Michigan"],
-        website: "https://www.nps.gov/isro/index.htm"
+        website: "https://www.nps.gov/isro/index.htm",
+        favorite: false
     },
     {
         id: "jotr",
@@ -303,7 +336,8 @@ const parks = [
         name: "Joshua Tree National Park",
         regions: ["Pacific West"],
         states: ["California"],
-        website: "https://www.nps.gov/jotr/index.htm"
+        website: "https://www.nps.gov/jotr/index.htm",
+        favorite: false
     },
     {
         id: "katm",
@@ -312,7 +346,8 @@ const parks = [
         name: "Katmai National Park & Preserve",
         regions: ["Alaska"],
         states: ["Alaska"],
-        website: "https://www.nps.gov/katm/index.htm"
+        website: "https://www.nps.gov/katm/index.htm",
+        favorite: false
     },
     {
         id: "kefj",
@@ -321,7 +356,8 @@ const parks = [
         name: "Kenai Fjords National Park",
         regions: ["Alaska"],
         states: ["Alaska"],
-        website: "https://www.nps.gov/kefj/index.htm"
+        website: "https://www.nps.gov/kefj/index.htm",
+        favorite: false
     },
     {
         id: "kova",
@@ -330,7 +366,8 @@ const parks = [
         name: "Kobuk Valley National Park",
         regions: ["Alaska"],
         states: ["Alaska"],
-        website: "https://www.nps.gov/kova/index.htm"
+        website: "https://www.nps.gov/kova/index.htm",
+        favorite: false
     },
     {
         id: "lacl",
@@ -339,7 +376,8 @@ const parks = [
         name: "Lake Clark National Park & Preserve",
         regions: ["Alaska"],
         states: ["Alaska"],
-        website: "https://www.nps.gov/lacl/index.htm"
+        website: "https://www.nps.gov/lacl/index.htm",
+        favorite: false
     },
     {
         id: "lavo",
@@ -348,7 +386,8 @@ const parks = [
         name: "Lassen Volcanic National Park",
         regions: ["Pacific West"],
         states: ["California"],
-        website: "https://www.nps.gov/lavo/index.htm"
+        website: "https://www.nps.gov/lavo/index.htm",
+        favorite: false
     },
     {
         id: "maca",
@@ -357,7 +396,8 @@ const parks = [
         name: "Mammoth Cave National Park",
         regions: ["Southeast"],
         states: ["Kentucky"],
-        website: "https://www.nps.gov/maca/index.htm"
+        website: "https://www.nps.gov/maca/index.htm",
+        favorite: false
     },
     {
         id: "meve",
@@ -366,7 +406,8 @@ const parks = [
         name: "Mesa Verde National Park",
         regions: ["Intermountain"],
         states: ["Colorado"],
-        website: "https://www.nps.gov/meve/index.htm"
+        website: "https://www.nps.gov/meve/index.htm",
+        favorite: false
     },
     {
         id: "mora",
@@ -375,7 +416,8 @@ const parks = [
         name: "Mount Rainier National Park",
         regions: ["Pacific West"],
         states: ["Washington"],
-        website: "https://www.nps.gov/mora/index.htm"
+        website: "https://www.nps.gov/mora/index.htm",
+        favorite: false
     },
     {
         id: "npsa",
@@ -384,7 +426,8 @@ const parks = [
         name: "National Park of American Samoa",
         regions: ["Pacific West"],
         states: ["American Samoa"],
-        website: "https://www.nps.gov/npsa/index.htm"
+        website: "https://www.nps.gov/npsa/index.htm",
+        favorite: false
     },
     {
         id: "npnh",
@@ -393,7 +436,8 @@ const parks = [
         name: "National Parks of New York Harbor",
         regions: ["Northeast"],
         states: ["New York"],
-        website: "https://www.nps.gov/npnh/index.htm"
+        website: "https://www.nps.gov/npnh/index.htm",
+        favorite: false
     },
     {
         id: "neri",
@@ -402,7 +446,8 @@ const parks = [
         name: "New River Gorge National Park and Preserve",
         regions: ["Northeast"],
         states: ["West Virginia"],
-        website: "https://www.nps.gov/neri/index.htm"
+        website: "https://www.nps.gov/neri/index.htm",
+        favorite: false
     },
     {
         id: "noca",
@@ -411,7 +456,8 @@ const parks = [
         name: "North Cascades National Park",
         regions: ["Pacific West"],
         states: ["Washington"],
-        website: "https://www.nps.gov/noca/index.htm"
+        website: "https://www.nps.gov/noca/index.htm",
+        favorite: false
     },
     {
         id: "olym",
@@ -420,7 +466,8 @@ const parks = [
         name: "Olympic National Park",
         regions: ["Pacific West"],
         states: ["Washington"],
-        website: "https://www.nps.gov/olym/index.htm"
+        website: "https://www.nps.gov/olym/index.htm",
+        favorite: false
     },
     {
         id: "pefo",
@@ -429,7 +476,8 @@ const parks = [
         name: "Petrified Forest National Park",
         regions: ["Intermountain"],
         states: ["Arizona"],
-        website: "https://www.nps.gov/pefo/index.htm"
+        website: "https://www.nps.gov/pefo/index.htm",
+        favorite: false
     },
     {
         id: "pinn",
@@ -438,7 +486,8 @@ const parks = [
         name: "Pinnacles National Park",
         regions: ["Pacific West"],
         states: ["California"],
-        website: "https://www.nps.gov/pinn/index.htm"
+        website: "https://www.nps.gov/pinn/index.htm",
+        favorite: false
     },
     {
         id: "romo",
@@ -447,7 +496,8 @@ const parks = [
         name: "Rocky Mountain National Park",
         regions: ["Intermountain"],
         states: ["Colorado"],
-        website: "https://www.nps.gov/romo/index.htm"
+        website: "https://www.nps.gov/romo/index.htm",
+        favorite: false
     },
     {
         id: "sagu",
@@ -456,7 +506,8 @@ const parks = [
         name: "Saguaro National Park",
         regions: ["Intermountain"],
         states: ["Arizona"],
-        website: "https://www.nps.gov/sagu/index.htm"
+        website: "https://www.nps.gov/sagu/index.htm",
+        favorite: false
     },
     {
         id: "seki",
@@ -465,7 +516,8 @@ const parks = [
         name: "Sequoia & Kings Canyon National Park",
         regions: ["Pacific West"],
         states: ["California"],
-        website: "https://www.nps.gov/seki/index.htm"
+        website: "https://www.nps.gov/seki/index.htm",
+        favorite: false
     },
     {
         id: "shen",
@@ -474,7 +526,8 @@ const parks = [
         name: "Shenandoah National Park",
         regions: ["Northeast"],
         states: ["Virginia"],
-        website: "https://www.nps.gov/shen/index.htm"
+        website: "https://www.nps.gov/shen/index.htm",
+        favorite: false
     },
     {
         id: "thro",
@@ -483,7 +536,8 @@ const parks = [
         name: "Theodore Roosevelt National Park",
         regions: ["Midwest"],
         states: ["North Dakota"],
-        website: "https://www.nps.gov/thro/index.htm"
+        website: "https://www.nps.gov/thro/index.htm",
+        favorite: false
     },
     {
         id: "viis",
@@ -492,7 +546,8 @@ const parks = [
         name: "Virgin Islands National Park",
         regions: ["Southeast"],
         states: ["Virgin Islands"],
-        website: "https://www.nps.gov/viis/index.htm"
+        website: "https://www.nps.gov/viis/index.htm",
+        favorite: false
     },
     {
         id: "voya",
@@ -501,7 +556,8 @@ const parks = [
         name: "Voyageurs National Park",
         regions: ["Midwest"],
         states: ["Minnesota"],
-        website: "https://www.nps.gov/voya/index.htm"
+        website: "https://www.nps.gov/voya/index.htm",
+        favorite: false
     },
     {
         id: "whsa",
@@ -510,7 +566,8 @@ const parks = [
         name: "White Sands National Park",
         regions: ["Intermountain"],
         states: ["New Mexico"],
-        website: "https://www.nps.gov/whsa/index.htm"
+        website: "https://www.nps.gov/whsa/index.htm",
+        favorite: false
     },
     {
         id: "wica",
@@ -519,7 +576,8 @@ const parks = [
         name: "Wind Cave National Park",
         regions: ["Midwest"],
         states: ["South Dakota"],
-        website: "https://www.nps.gov/wica/index.htm"
+        website: "https://www.nps.gov/wica/index.htm",
+        favorite: false
     },
     {
         id: "wotr",
@@ -528,7 +586,8 @@ const parks = [
         name: "Wolf Trap National Park for the Performing Arts",
         regions: ["National Capital"],
         states: ["Virginia"],
-        website: "https://www.nps.gov/wotr/index.htm"
+        website: "https://www.nps.gov/wotr/index.htm",
+        favorite: false
     },
     {
         id: "wrst",
@@ -537,7 +596,8 @@ const parks = [
         name: "Wrangell - St. Elias National Park & Preserve",
         regions: ["Alaska"],
         states: ["Alaska"],
-        website: "https://www.nps.gov/wrst/index.htm"
+        website: "https://www.nps.gov/wrst/index.htm",
+        favorite: false
     },
     {
         id: "yell",
@@ -546,7 +606,8 @@ const parks = [
         name: "Yellowstone National Park",
         regions: ["Intermountain", "Pacific West"],
         states: ["Idaho", "Montana", "Wyoming"],
-        website: "https://www.nps.gov/yell/index.htm"
+        website: "https://www.nps.gov/yell/index.htm",
+        favorite: true
     },
     {
         id: "yose",
@@ -555,7 +616,8 @@ const parks = [
         name: "Yosemite National Park",
         regions: ["Pacific West"],
         states: ["California"],
-        website: "https://www.nps.gov/yose/index.htm"
+        website: "https://www.nps.gov/yose/index.htm",
+        favorite: false
     },
     {
         id: "zion",
@@ -564,12 +626,19 @@ const parks = [
         name: "Zion National Park",
         regions: ["Intermountain"],
         states: ["Utah"],
-        website: "https://www.nps.gov/zion/index.htm"
+        website: "https://www.nps.gov/zion/index.htm",
+        favorite: false
     }
 ];
 
 //Resolvers connects everything together.
 //They resolve the “functionalities” defined in the schema.
+//They accept four optional arguments: parent, args, context, info.
+//1. Parent: returned value of previous resolver in chain.
+//2. Args: object containing arguments provided to the field.
+//3. Context: An object shared across all resolvers executing an operation.
+//4. Info: Contains information about the operation's execution state.
+//More info here: https://www.apollographql.com/docs/apollo-server/data/resolvers.
 const resolvers = {
     Query: {
         //allParks: ($name) => parks, (With no search capability. Check schema too.)
@@ -601,6 +670,16 @@ const resolvers = {
                         search.substring(0, search.length).toLowerCase()
                     )
             );
+            return park;
+        }
+    },
+    Mutation: { //Don't forget to import use mutation.https://v4.apollo.vuejs.org/guide-composable/mutation.html#executing-a-mutation
+        favoritePark: (_, { id }) => {
+            let park = parks.find((park) =>
+                park.id === id
+            );
+            let fav = park.favorite;
+            fav === true ? park.favorite = false : park.favorite = true;
             return park;
         }
     }
