@@ -1,0 +1,12 @@
+# Note about this file name.
+# Convention is to use the type extension first and gql extension second.
+# Types are query, subscription, mutation.
+# You can also use the extension "graphql" instead of "gql".
+
+#Toggle - makes park "favorite" or removes it.
+mutation makeFavoritePark($id: ID!) {
+    favoritePark(id: $id) {
+        id
+        favorite
+    }
+}
