@@ -17,16 +17,16 @@
 
         <p
             v-if="loading"
-            class="search-messages"
+            class="search-messages subtle"
         >
             Loading...
         </p>
 
         <p
             v-else-if="error"
-            class="search-messages"
+            class="search-messages warn"
         >
-            Something went wrong! Please try again.
+            Something went wrong. Please try again.
         </p>
 
         <template v-else>
@@ -74,11 +74,35 @@
                             website
                         </a>
                     </span>
-                    <br>
-                    <span>
-                        Favorite: {{ park.favorite }}
-                    </span>
                 </p>
+                <figure
+                    class="favorite"
+                    @click="toggleFavorite({ id: park.id })"
+                >
+                    <img
+                        v-if="park.favorite === true"
+                        src="@/assets/images/favorite-icon-yes-fill.svg"
+                    >
+                    <img
+                        v-else
+                        src="@/assets/images/favorite-icon-no-fill.svg"
+                    >
+                    <!--Loading text is same color as bg and not seen.-->
+                    <!--Modify stylesheet's subtle class to display.-->
+                    <!--But, it displays text for each park.-->
+                    <figcaption
+                        v-if="toggleFavoriteLoading"
+                        class="subtle"
+                    >
+                        Loading...
+                    </figcaption>
+                    <figcaption
+                        v-else-if="toggleFavoriteError"
+                        class="warn"
+                    >
+                        Something went wrong. Please try again.
+                    </figcaption>
+                </figure>
             </div>
         </template>
     </section>
@@ -100,7 +124,9 @@ import HelpBox from "@/components/HelpBox.vue";
 
 import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
+import { useMutation } from "@vue/apollo-composable";
 import CHOSEN_NAME_QUERY from "@/graphql/chosenName.query.gql";
+import FAVORITE_PARK_QUERY from "@/graphql/favoritePark.mutation.gql";
 
 export default {
     name: "ParksByName",
@@ -110,6 +136,7 @@ export default {
     },
     setup() {
         const searchTerm = ref("");
+
         const { result, loading, error } = useQuery(
             CHOSEN_NAME_QUERY,
             () => (
@@ -127,7 +154,24 @@ export default {
 
         const imageUrl = new URL("../assets/images/", import.meta.url).href;
 
-        return { parks, searchTerm, loading, error, imageUrl};
+        const {
+            mutate: toggleFavorite,
+            loading: toggleFavoriteLoading,
+            error: toggleFavoriteError
+        } = useMutation(
+            FAVORITE_PARK_QUERY
+        );
+
+        return {
+            parks,
+            searchTerm,
+            loading,
+            error,
+            imageUrl,
+            toggleFavorite,
+            toggleFavoriteLoading,
+            toggleFavoriteError
+        };
     },
     data() {
         return{
