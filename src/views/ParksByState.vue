@@ -74,16 +74,23 @@
                             website
                         </a>
                     </span>
+                    <br>
+                    <span>
+                        Favorite: {{ park.favorite }}
+                    </span>
                 </p>
             </div>
         </template>
     </section>
-    <HelpBox
-        title="Need Some Help?"
-        text="Not every state &amp; territory has a National Park."
-        link="These do."
-        :list-items="listItems"
-    />
+
+    <aside>
+        <HelpBox
+            title="Need Some Help?"
+            text="Not every state &amp; territory has a National Park."
+            link="These do."
+            :list-items="listItems"
+        />
+    </aside>
 </template>
 
 <script>

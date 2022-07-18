@@ -74,6 +74,10 @@
                             website
                         </a>
                     </span>
+                    <br>
+                    <span>
+                        Favorite: {{ park.favorite }}
+                    </span>
                 </p>
             </div>
         </template>

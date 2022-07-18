@@ -74,17 +74,24 @@
                             website
                         </a>
                     </span>
+                    <br>
+                    <span>
+                        Favorite: {{ park.favorite }}
+                    </span>
                 </p>
             </div>
         </template>
     </section>
-    <HelpBox
-        title="Need Some Help?"
-        text="These are the National Parks Service's"
-        link="seven regions."
-        :list-items="listItems"
-    />
-    <MapBox />
+
+    <aside>
+        <HelpBox
+            title="Need Some Help?"
+            text="These are the National Parks Service's"
+            link="seven regions."
+            :list-items="listItems"
+        />
+        <MapBox />
+    </aside>
 </template>
 
 <script>
