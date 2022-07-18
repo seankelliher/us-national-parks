@@ -10,8 +10,13 @@ const typeDefs = gql`
         chosenRegion(search: String): [Park]
     }
 
+    # A client sends a mutation...
+    type Mutation {
+        favoritePark(id: ID!): Park
+    }
+
     # to get this type object.
-    # This object has five fields: id, name, region, state, website.
+    # This object has eight fields.
     type Park {
         id: ID,
         image: String,
@@ -19,7 +24,8 @@ const typeDefs = gql`
         name: String,
         regions: [String],
         states: [String],
-        website: String
+        website: String,
+        favorite: Boolean
     }
 `;
 
