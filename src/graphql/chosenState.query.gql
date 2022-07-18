@@ -11,5 +11,6 @@ query getChosenState($search: String) {
         regions
         states
         website
+        favorite
     }
 }
