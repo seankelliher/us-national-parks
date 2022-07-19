@@ -1,18 +1,32 @@
 <template>
     <div class="map-box">
         <div class="map-box-title">
-            <p
-                style="background: #d5eaf2"
-                class="link"
+            <h3>{{ title }}</h3>
+        </div>
+        <figure
+            v-if="!mapArea"
+            class="open-close"
+        >
+            <img
+                src="@/assets/images/open-in-full-icon.svg"
+                alt="icon to expand window"
                 @click="mapArea = !mapArea"
             >
-                View a region map
-            </p>
-        </div>
+        </figure>
+        <figure
+            v-if="mapArea"
+            class="open-close"
+        >
+            <img
+                src="@/assets/images/close-icon.svg"
+                alt="icon to close window"
+                @click="mapArea = !mapArea"
+            >
+        </figure>
         <Transition name="slide-up-fade-in-out">
             <div
                 v-if="mapArea"
-                class="map-box-map"
+                class="map-box-content"
             >
                 <figure
                     class="full"
@@ -31,6 +45,12 @@
 <script>
 export default {
     name: "MapBox",
+    props: {
+        title: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             mapArea: false

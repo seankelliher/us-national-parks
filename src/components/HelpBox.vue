@@ -1,20 +1,33 @@
 <template>
     <div class="help-box">
-        <h3>{{ title }}</h3>
-        <p>
-            {{ text }}
-            <span
-                class="link"
+        <div class="help-box-title">
+            <h3>{{ title }}</h3>
+        </div>
+        <figure
+            v-if="!listArea"
+            class="open-close"
+        >
+            <img
+                src="@/assets/images/open-in-full-icon.svg"
+                alt="icon to expand window"
                 @click="listArea = !listArea"
             >
-                {{ link }}
-            </span>
-        </p>
+        </figure>
+        <figure
+            v-if="listArea"
+            class="open-close"
+        >
+            <img
+                src="@/assets/images/close-icon.svg"
+                alt="icon to close window"
+                @click="listArea = !listArea"
+            >
+        </figure>
     </div>
     <Transition name="slide-up-fade-in-out">
         <div
             v-if="listArea"
-            class="help-box-list"
+            class="help-box-content"
         >
             <ol>
                 <li
@@ -35,15 +48,6 @@ export default {
         title: {
             type: String,
             required: true
-        },
-        text: {
-            type: String,
-            required: true
-        },
-        link: {
-            type: String,
-            required: false,
-            default: "Click here for details."
         },
         listItems: {
             type: Array,
