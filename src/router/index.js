@@ -3,6 +3,7 @@ import HomePage from "@/views/HomePage.vue";
 import ParksByName from "@/views/ParksByName.vue";
 import ParksByRegion from "@/views/ParksByRegion.vue";
 import ParksByState from "@/views/ParksByState.vue";
+import NotFound from "@/views/NotFound.vue";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: "/parks-by-state",
         name: "ParksByState",
         component: ParksByState
+    },
+    {
+        path: "/:catchAll(.*)",
+        name: "NotFound",
+        component: NotFound
     }
 ];
 
