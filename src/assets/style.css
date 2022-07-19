@@ -36,6 +36,21 @@ header {
     flex: initial; /*flex: 0 1 auto*/
 }
 
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a.router-link-exact-active {
+    color: #fff;
+    text-decoration: none;
+}
+
 nav {
     width: 90%;
     margin: 0;
@@ -117,6 +132,20 @@ figure.favorite:hover {
     cursor: pointer;
 }
 
+figure.open-close {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    position:  absolute;
+    top: 10px;
+    right: 10px;
+}
+
+figure.open-close:hover {
+    cursor: pointer;
+}
+
 ol {
     width:  100%;
     columns: 2;
@@ -142,7 +171,11 @@ button.nav {
 }
 
 button.nav a {
-    /*color: #fff;*/
+    color: #000;
+    text-decoration: none;
+}
+
+button.nav a:hover {
     color: #000;
     text-decoration: none;
 }
@@ -219,7 +252,7 @@ input[type="text"] {
     width: 90%;
     margin: 1em 0;
     padding: 0 5% 1em 5%;
-    border: 2px solid #eee;
+    border: 2px solid #e0e0e0; /*grey 300*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
@@ -247,46 +280,34 @@ input[type="text"] {
     border-bottom: none;
 }
 
-.help-box {
-    width: 90%;
-    margin: 1em 0 0 0;
-    padding: 0 5%;
-    background: #d5eaf2; /*sky blue*/
-    flex: initial; /*flex: 0 1 auto*/
-}
-
-.help-box-list {
-    width: 90%;
-    margin: 0;
-    padding: 1em 5%;
-    background: #fafafa; /*grey 50*/
-    flex: initial; /*flex: 0 1 auto*/
-}
-
-.map-box {
+.help-box, .map-box {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-top: 2px solid #f5f5f5;  /*grey 100*/
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
+    position: relative;
 }
 
-.map-box-title {
+.help-box {
+    border-bottom:  2px solid #f5f5f5; /*grey 100*/
+}
+
+.help-box-title, .map-box-title {
     width: 90%;
     margin: 0;
-    padding: 0 5%;
+    padding: 0.5em 5%;
     background: #d5eaf2; /*sky blue*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
-.map-box-map {
+.help-box-content, .map-box-content {
     width: 90%;
     margin: 0;
-    padding: 0 5%;
+    padding: 1em 5%;
     background: #fafafa; /*grey 50*/
     flex: initial; /*flex: 0 1 auto*/
 }
@@ -301,12 +322,12 @@ input[type="text"] {
 
 .slide-up-fade-in-out-leave-to {
     opacity: 0;
-    transform: translateY(0);
+    transform: translateY(10px);
 }
 
 .slide-up-fade-in-out-enter-active,
 .slide-up-fade-in-out-leave-active {
-    transition: all 1.5s ease-out;
+    transition: all 1s ease-out;
 }
 
 /*FONTS STYLES ARE BELOW*/
@@ -318,7 +339,7 @@ h1 {
     color: #fff;
 }
 
-h1 a {
+/*h1 a {
     color: #fff;
     color: #000;
     text-decoration: none;
@@ -327,7 +348,7 @@ h1 a {
 h1 a:hover {
     color: #fff;
     text-decoration: none;
-}
+}*/
 
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
