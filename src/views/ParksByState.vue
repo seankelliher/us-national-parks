@@ -109,9 +109,7 @@
 
     <aside>
         <HelpBox
-            title="Need Some Help?"
-            text="Not every state &amp; territory has a National Park."
-            link="These do."
+            title="States and territories with parks."
             :list-items="listItems"
         />
     </aside>

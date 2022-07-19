@@ -109,9 +109,7 @@
 
     <aside>
         <HelpBox
-            title="Need Some Help?"
-            text="Type 'park' into the search bar' to get all parks or"
-            link="see this list."
+            title="A list of parks."
             :list-items="listItems"
         />
     </aside>

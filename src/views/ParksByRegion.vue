@@ -109,12 +109,10 @@
 
     <aside>
         <HelpBox
-            title="Need Some Help?"
-            text="These are the National Parks Service's"
-            link="seven regions."
+            title="A list of regions."
             :list-items="listItems"
         />
-        <MapBox />
+        <MapBox title="A map." />
     </aside>
 </template>
 
