@@ -12,19 +12,13 @@ img {
 #app {
     width: 100%;
     max-width: 600px;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
-}
-
-/*sticky footer test*/
-#app {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 /*MAIN SEMANTIC ELEMENTS ARE BELOW*/
@@ -55,7 +49,6 @@ nav {
     width: 90%;
     margin: 0;
     padding: 0.25em 5%;
-    /*background: #f2cb05; curset yellow*/
     background: #d5eaf2; /*sky blue*/
     border-top: 2px solid #010b40;
     border-bottom: 2px solid #010b40;
@@ -70,12 +63,11 @@ section {
     width: 100%;
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
-    flex: 1; /*sticky footer test*/
+    flex: 1; /*needed for sticky footer*/
 }
 
 aside {
@@ -88,20 +80,6 @@ aside {
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
 }
-
-/*@media all and (min-width: 300px) {
-    section {
-        border-right: none;
-        border-left: none;
-    }
-}
-
-@media all and (min-width: 600px) {
-    section {
-        border-right: 1px solid #f5f5f5;
-        border-left: 1px solid #f5f5f5;
-    }
-}*/
 
 figure.logo {
     width: 30%;
@@ -162,7 +140,6 @@ footer {
 /*BUTTON ELEMENTS ARE BELOW*/
 /*button for nav: By Name, By Region, By State*/
 button.nav {
-    /*background: #4b5e26; NPS button green*/
     background: none;
     border: none;
     border-radius: 6px;
@@ -176,8 +153,7 @@ button.nav a {
 }
 
 button.nav a:hover {
-    color: #000;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 button.nav a.router-link-exact-active {
@@ -198,15 +174,13 @@ button.large {
 }
 
 button.large a {
-    /*color: #fff;*/
     color: #fff;
     text-decoration: none;
 }
 
-/*button.hint {
-    background: transparent;
-    border: none;
-}*/
+button.large a:hover {
+    text-decoration: underline;
+}
 
 /*FORM ELEMENTS ARE BELOW*/
 input[type="text"] {
@@ -220,9 +194,11 @@ input[type="text"] {
 .page-intro {
     width: 90%;
     margin: 0 0 1em 0;
-    padding: 0.5em 5%;
-    background: #fafafa; /*grey 50*/
-    border:  2px solid #f5f5f5; /*grey 100*/
+    padding: 1em 5%;
+    background: #d5eaf2; /*sky blue*/
+    /*background: #fafafa; grey 50*/
+    /*border:  2px solid #f5f5f5; grey 100*/
+    border-bottom: 2px solid #010b40;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -252,7 +228,8 @@ input[type="text"] {
     width: 90%;
     margin: 1em 0;
     padding: 0 5% 1em 5%;
-    border: 2px solid #e0e0e0; /*grey 300*/
+    background: #bf5d39; /*medium brown*/
+    /*border: 2px solid #bf5d39; medium brown*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
@@ -267,17 +244,12 @@ input[type="text"] {
     width: 90%;
     margin: 1em 0;
     padding: 1em 5%;
-    background: #fafafa; /*grey 50*/
-    border: 1px solid #f5f5f5; /*grey 100*/
+    border: 2px solid #d5eaf2; /*sky blue*/
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
-}
-
-.park:last-child {
-    border-bottom: none;
 }
 
 .help-box, .map-box {
@@ -293,7 +265,7 @@ input[type="text"] {
 }
 
 .help-box {
-    border-bottom:  2px solid #f5f5f5; /*grey 100*/
+    border-bottom: 2px solid #f5f5f5; /*grey 100*/
 }
 
 .help-box-title, .map-box-title {
@@ -313,7 +285,7 @@ input[type="text"] {
 }
 
 /*TRANSITIONS ARE BELOW*/
-/*Content slides up and fades in, later fades out*/
+/*Content slides up and fades in, slides down and fades out*/
 /*Used on HelpBox.vue and MapBox.vue*/
 .slide-up-fade-in-out-enter-from {
     opacity: 0;
@@ -339,17 +311,6 @@ h1 {
     color: #fff;
 }
 
-/*h1 a {
-    color: #fff;
-    color: #000;
-    text-decoration: none;
-}
-
-h1 a:hover {
-    color: #fff;
-    text-decoration: none;
-}*/
-
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.1;
@@ -362,6 +323,10 @@ h3 {
     font-weight: 600;
     margin-bottom: 0.5em;
     width: 100%;
+}
+
+.search h3 {
+    color: #fff;
 }
 
 button.nav {
@@ -395,9 +360,7 @@ p a {
 }
 
 p a:hover {
-    color: #0e4996; /*dark blue*/
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .park p {
@@ -406,6 +369,14 @@ p a:hover {
 
 footer p {
   color: #fff;
+}
+
+footer p a {
+  color: #d5eaf2; /*sky blue*/
+}
+
+footer p a:hover {
+  text-decoration: underline;
 }
 
 /*FONTS MEDIA QUERIES ARE BELOW*/
@@ -508,26 +479,8 @@ footer p {
     color: #d90416; /*dark red*/
 }
 
-/*makes font green*/
-.compliment {
-    color: #277332; /*dark green*/
-}
-
-/*makes font grey*/
+/*makes font light grey*/
+/*in this case, it hides "loading" text when user "likes" a park.*/
 .subtle {
     color: #fafafa; /*grey 50*/
 }
-
-/*makes text same format as "a ref"*/
-.link {
-    color: #0e4996; /*dark blue*/
-    text-decoration: none;
-}
-
-.link:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/*Note: Setting font styles for "select" or "option" in the form's pull-down
-menu seems to make no difference. Adding "optgroup" has no effect either.*/
