@@ -282,7 +282,7 @@ const parks = [
     {
         id: "hale",
         image: "hale-keoneheehee-trail",
-        caption: "Rangers on Keoneheʻeheʻe Trail. Photo: NPS, Hannah Mousavi.",
+        caption: "Rangers on Keonehe'ehe'e Trail. Photo: NPS, Hannah Mousavi.",
         name: "Haleakalā National Park",
         regions: ["Pacific West"],
         states: ["Hawaii"],
@@ -293,7 +293,7 @@ const parks = [
         id: "havo",
         image: "havo-hikers-kahuku",
         caption: "Hikers Resting in Kahuku. Photo: NPS, J. Wei.",
-        name: "Hawai‘i Volcanoes National Park",
+        name: "Hawai'i Volcanoes National Park",
         regions: ["Pacific West"],
         states: ["Hawaii"],
         website: "https://www.nps.gov/havo/index.htm",
