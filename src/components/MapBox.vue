@@ -6,21 +6,25 @@
         <figure
             v-if="!mapArea"
             class="open-close"
+            role="button"
+            tabindex="0"
+            @click="mapArea = !mapArea"
         >
             <img
                 src="@/assets/images/open-in-full-icon.svg"
                 alt="icon to expand window"
-                @click="mapArea = !mapArea"
             >
         </figure>
         <figure
             v-if="mapArea"
             class="open-close"
+            role="button"
+            tabindex="0"
+            @click="mapArea = !mapArea"
         >
             <img
                 src="@/assets/images/close-icon.svg"
                 alt="icon to close window"
-                @click="mapArea = !mapArea"
             >
         </figure>
         <Transition name="slide-up-fade-in-out">
