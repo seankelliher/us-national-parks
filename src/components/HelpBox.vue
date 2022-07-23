@@ -6,21 +6,25 @@
         <figure
             v-if="!listArea"
             class="open-close"
+            role="button"
+            tabindex="0"
+            @click="listArea = !listArea"
         >
             <img
                 src="@/assets/images/open-in-full-icon.svg"
                 alt="icon to expand window"
-                @click="listArea = !listArea"
             >
         </figure>
         <figure
             v-if="listArea"
             class="open-close"
+            role="button"
+            tabindex="0"
+            @click="listArea = !listArea"
         >
             <img
                 src="@/assets/images/close-icon.svg"
                 alt="icon to close window"
-                @click="listArea = !listArea"
             >
         </figure>
     </div>
