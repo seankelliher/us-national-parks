@@ -5,10 +5,13 @@
             <p>{{ intro }}</p>
         </div>
 
-        <figure class="logo">
+        <figure
+            class="logo"
+            role="presentation"
+        >
             <img
                 alt="National Parks Service logo"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_of_the_United_States_National_Park_Service.svg/184px-Logo_of_the_United_States_National_Park_Service.svg.png"
+                src="@/assets/images/national-park-service-logo.svg"
             >
         </figure>
     </div>
