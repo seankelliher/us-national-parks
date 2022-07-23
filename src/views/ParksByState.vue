@@ -6,8 +6,9 @@
 
     <section>
         <div class="search">
-            <h3>Search for your park by state</h3>
+            <label for="search-term"><h3>Search for your park by state</h3></label>
             <input
+                id="search-term"
                 v-model="searchTerm"
                 type="text"
                 name="search-term"
@@ -71,21 +72,26 @@
                             :href="`${park.website}`"
                             target="_blank"
                         >
-                            website
+                            nps.gov/{{ park.id }}
                         </a>
                     </span>
                 </p>
                 <figure
                     class="favorite"
+                    role="button"
+                    tabindex="0"
+                    aria-label="like icon, click to 'like' this park"
                     @click="toggleFavorite({ id: park.id })"
                 >
                     <img
                         v-if="park.favorite === true"
                         src="@/assets/images/favorite-icon-yes-fill.svg"
+                        alt="filled icon, user liked this park"
                     >
                     <img
                         v-else
                         src="@/assets/images/favorite-icon-no-fill.svg"
+                        alt="empty icon, user did not like this park yet"
                     >
                     <!--Loading text is same color as bg and not seen.-->
                     <!--Modify stylesheet's subtle class to display.-->
@@ -109,7 +115,7 @@
 
     <aside>
         <HelpBox
-            title="States and territories with parks."
+            title="States &amp; territories with parks."
             :list-items="listItems"
         />
     </aside>
