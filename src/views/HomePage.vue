@@ -2,7 +2,7 @@
     <section>
         <PageIntro
             title="Welcome"
-            intro="Since 1916, the National Park Service has safeguarded America's national parks and welcomed more than 318 million visitors every year."
+            intro="Since 1916, the National Park Service has safeguarded America's national parks."
         />
 
         <div class="home-page">
