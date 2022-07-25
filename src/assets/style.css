@@ -137,7 +137,18 @@ figure.open-close:hover {
 
 ol {
     width:  100%;
-    columns: 2;
+}
+
+@media all and (min-width: 300px) {
+    ol {
+        columns: 1;
+    }
+}
+
+@media all and (min-width: 460px) {
+    ol {
+        columns: 2;
+    }
 }
 
 footer {
