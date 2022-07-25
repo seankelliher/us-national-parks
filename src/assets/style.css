@@ -82,10 +82,21 @@ aside {
 }
 
 figure.logo {
-    width: 30%;
-    margin: 0;
+    margin: 1em 0 0 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
+}
+
+@media all and (min-width: 300px) {
+    figure.logo {
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    figure.logo {
+        width: 25%;
+    }
 }
 
 figure.full {
@@ -163,7 +174,6 @@ button.nav a.router-link-exact-active {
 
 /*button for homepage: Search by...*/
 button.large {
-    width: 60%;
     margin: 1em 0;
     padding: 1em 5%;
     background: #bf5d39; /*medium brown*/
@@ -171,6 +181,24 @@ button.large {
     border-radius: 6px;
     flex: initial; /*flex: 0 1 auto*/
     cursor: pointer;
+}
+
+@media all and (min-width: 300px) {
+    button.large {
+        width: 80%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    button.large {
+        width: 70%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    button.large {
+        width: 60%;
+    }
 }
 
 button.large a {
@@ -203,14 +231,31 @@ input[type="text"] {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around; /*main axis*/
-    align-items: center; /*cross axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
 .intro-text {
-    width: 70%;
     margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
+}
+
+@media all and (min-width: 300px) {
+    .intro-text {
+        width: 60%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .intro-text {
+        width: 65%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .intro-text {
+        width: 70%;
+    }
 }
 
 .home-page {
