@@ -298,14 +298,19 @@ input[type="text"] {
 
 .park {
     width: 90%;
-    margin: 1em 0;
+    margin: 1em 0 1em 0;
     padding: 1em 5%;
-    border: 2px solid #d5eaf2; /*sky blue*/
+    border-bottom: 2px solid #d5eaf2; /*sky blue*/
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
+}
+
+.park:last-child {
+    margin: 1em 0 0 0;
+    border-bottom: none;
 }
 
 .help-box, .map-box {
