@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-/*img becomes no larger than actual size.*/
+/* img becomes no larger than actual size. */
 img {
     max-width: 100%;
     height: auto;
@@ -17,17 +17,16 @@ img {
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
-/*MAIN SEMANTIC ELEMENTS ARE BELOW*/
 header {
     width: 90%;
     margin: 0;
     padding: 0.5em 5%;
-    background: #010b40; /*very dark blue*/
-    flex: initial; /*flex: 0 1 auto*/
+    background: #010b40; /* very dark blue */
+    flex: initial; /* flex: 0 1 auto */
 }
 
 header a {
@@ -35,13 +34,16 @@ header a {
     text-decoration: none;
 }
 
-header a:hover {
-    color: #fff;
+p a {
+    color: #0e4996; /* dark blue */
     text-decoration: none;
 }
 
-header a.router-link-exact-active {
+footer p a {
     color: #fff;
+}
+
+header a:hover {
     text-decoration: none;
 }
 
@@ -49,14 +51,14 @@ nav {
     width: 90%;
     margin: 0;
     padding: 0.25em 5%;
-    background: #d5eaf2; /*sky blue*/
+    background: #d5eaf2; /* sky blue */
     border-top: 2px solid #010b40;
     border-bottom: 2px solid #010b40;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; /*main axis*/
-    align-items: center; /*cross axis*/
+    justify-content: space-between; /* main axis */
+    align-items: center; /* cross axis */
 }
 
 section {
@@ -65,26 +67,26 @@ section {
     padding: 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
-    flex: 1; /*needed for sticky footer*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
+    flex: 1; /* needed for sticky footer */
 }
 
 aside {
     width: 100%;
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 figure.logo {
-    margin: 1em 0 0 0;
+    margin: 1em 0 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
 }
 
 @media all and (min-width: 300px) {
@@ -103,18 +105,18 @@ figure.full {
     width: 100%;
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
 }
 
 figure.favorite {
     width: 100%;
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: space-between; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 figure.favorite:hover {
@@ -126,7 +128,7 @@ figure.open-close {
     height: 24px;
     margin: 0;
     padding: 0;
-    position:  absolute;
+    position: absolute;
     top: 10px;
     right: 10px;
 }
@@ -136,7 +138,7 @@ figure.open-close:hover {
 }
 
 ol {
-    width:  100%;
+    width: 100%;
 }
 
 @media all and (min-width: 300px) {
@@ -155,23 +157,38 @@ footer {
     width: 90%;
     margin: 0;
     padding: 1em 5%;
-    background: #010b40; /*very dark blue*/
-    flex: initial; /*flex: 0 1 auto*/
+    background: #010b40; /* very dark blue */
+    flex: initial; /* flex: 0 1 auto */
 }
 
-/*BUTTON ELEMENTS ARE BELOW*/
-/*button for nav: By Name, By Region, By State*/
-button.nav {
-    background: none;
-    border: none;
-    border-radius: 6px;
-    flex: initial; /*flex: 0 1 auto*/
-    cursor: pointer;
+p a:hover {
+    text-decoration: underline;
 }
 
 button.nav a {
     color: #000;
     text-decoration: none;
+}
+
+button.large a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* button for nav: By Name, By Region, By State */
+button.nav {
+    background: none;
+    border: none;
+    border-radius: 6px;
+    flex: initial; /* flex: 0 1 auto */
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2;
+    font-weight: 600;
 }
 
 button.nav a:hover {
@@ -183,15 +200,18 @@ button.nav a.router-link-exact-active {
     text-decoration: underline;
 }
 
-/*button for homepage: Search by...*/
+/* button for homepage: Search by... */
 button.large {
     margin: 1em 0;
     padding: 1em 5%;
-    background: #bf5d39; /*medium brown*/
+    background: #bf5d39; /* medium brown */
     border: none;
     border-radius: 6px;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2;
+    font-weight: 600;
 }
 
 @media all and (min-width: 300px) {
@@ -212,16 +232,11 @@ button.large {
     }
 }
 
-button.large a {
-    color: #fff;
-    text-decoration: none;
-}
-
 button.large a:hover {
     text-decoration: underline;
 }
 
-/*FORM ELEMENTS ARE BELOW*/
+/* FORM ELEMENTS ARE BELOW */
 input[type="text"] {
     width: 100%;
     margin: 0.5em 0;
@@ -229,24 +244,24 @@ input[type="text"] {
     border: 2px solid #eee;
 }
 
-/*VARIOUS "CLASS" ELEMENTS ARE BELOW*/
+/* VARIOUS "CLASS" ELEMENTS ARE BELOW */
 .page-intro {
     width: 90%;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em;
     padding: 1em 5%;
-    background: #d5eaf2; /*sky blue*/
+    background: #d5eaf2; /* sky blue */
     border-bottom: 2px solid #010b40;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: space-around; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 .intro-text {
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
 }
 
 @media all and (min-width: 300px) {
@@ -269,82 +284,87 @@ input[type="text"] {
 
 .home-page {
     width: 90%;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em;
     padding: 1em 5%;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center; /*main axis*/
-    align-items: center; /*cross axis*/
+    justify-content: center; /* main axis */
+    align-items: center; /* cross axis */
 }
 
 .search {
     width: 90%;
     margin: 1em 0;
-    padding: 0 5% 1em 5%;
-    background: #bf5d39; /*medium brown*/
-    flex: initial; /*flex: 0 1 auto*/
+    padding: 0 5% 1em; /* left is 5% */
+    background: #bf5d39; /* medium brown */
+    flex: initial; /* flex: 0 1 auto */
 }
 
 .search-messages {
     width: 90%;
     margin: 0;
     padding: 0 5%;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
 }
 
 .park {
     width: 90%;
-    margin: 1em 0 1em 0;
+    margin: 1em 0;
     padding: 1em 5%;
-    border-bottom: 2px solid #d5eaf2; /*sky blue*/
-    flex: initial; /*flex: 0 1 auto*/
+    border-bottom: 2px solid #d5eaf2; /* sky blue */
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 .park:last-child {
-    margin: 1em 0 0 0;
+    margin: 1em 0 0;
     border-bottom: none;
 }
 
-.help-box, .map-box {
+.help-box,
+.map-box {
     width: 100%;
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
     position: relative;
 }
 
 .help-box {
-    border-bottom: 2px solid #f5f5f5; /*grey 100*/
+    border-bottom: 2px solid #f5f5f5; /* grey 100 */
 }
 
-.help-box-title, .map-box-title {
+.help-box-title,
+.map-box-title {
     width: 90%;
     margin: 0;
     padding: 0.5em 5%;
-    background: #d5eaf2; /*sky blue*/
-    flex: initial; /*flex: 0 1 auto*/
+    background: #d5eaf2; /* sky blue */
+    flex: initial; /* flex: 0 1 auto */
 }
 
-.help-box-content, .map-box-content {
+.help-box-content,
+.map-box-content {
     width: 90%;
     margin: 0;
     padding: 1em 5%;
-    background: #fafafa; /*grey 50*/
-    flex: initial; /*flex: 0 1 auto*/
+    background: #fafafa; /* grey 50 */
+    flex: initial; /* flex: 0 1 auto */
 }
 
-/*TRANSITIONS ARE BELOW*/
-/*Content slides up and fades in, slides down and fades out*/
-/*Used on HelpBox.vue and MapBox.vue*/
+/* TRANSITIONS ARE BELOW */
+
+/* Content slides up and fades in, slides down and fades out */
+
+/* Used on HelpBox.vue and MapBox.vue */
 .slide-up-fade-in-out-enter-from {
     opacity: 0;
     transform: translateY(10px);
@@ -360,7 +380,7 @@ input[type="text"] {
     transition: all 1s ease-out;
 }
 
-/*FONTS STYLES ARE BELOW*/
+/* FONTS STYLES ARE BELOW */
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.2;
@@ -387,157 +407,144 @@ h3 {
     color: #fff;
 }
 
-button.nav {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 2.0;
-    font-weight: 600;
-}
-
-button.large {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 2.0;
-    font-weight: 600;
-}
-
 figcaption {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    color: #616161; /*grey 700*/
+    color: #616161; /* grey 700 */
 }
 
-p, input, li {
+p,
+input,
+li {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.8;
     font-weight: 400;
 }
 
-p a {
-    color: #0e4996; /*dark blue*/
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
+footer p {
+    color: #fff;
 }
 
 .park p {
     margin-top: 0;
 }
 
-footer p {
-  color: #fff;
-}
-
-footer p a {
-  color: #d5eaf2; /*sky blue*/
-}
-
-footer p a:hover {
-  text-decoration: underline;
-}
-
-/*FONTS MEDIA QUERIES ARE BELOW*/
+/* FONTS MEDIA QUERIES ARE BELOW */
 @media all and (min-width: 300px) {
     h1 {
         font-size: 1em;
     }
 
     h2 {
-        font-size: 1em; /*16px*/
+        font-size: 1em; /* 16px */
     }
 
-    h3, button.large {
-        font-size: .9375em; /*15px*/
+    h3,
+    button.large {
+        font-size: 0.9375em; /* 15px */
     }
 
     button.nav {
-        font-size: .8125em; /*13px*/
+        font-size: 0.8125em; /* 13px */
     }
 
     figcaption {
-        font-size: .75em; /*12px*/
+        font-size: 0.75em; /* 12px */
     }
 
-    p, input, li {
-        font-size: .875em; /*14px*/
+    p,
+    input,
+    li {
+        font-size: 0.875em; /* 14px */
     }
 }
 
 @media all and (min-width: 400px) {
     h2 {
-        font-size: 1.2em; /*19.2px*/
+        font-size: 1.2em; /* 19.2px */
     }
 
-    h3, button.large {
-        font-size: 1em; /*16px*/
+    h3,
+    button.large {
+        font-size: 1em; /* 16px */
     }
 
     button.nav {
-        font-size: .875em; /*14px*/
+        font-size: 0.875em; /* 14px */
     }
 
     figcaption {
-        font-size: .8125em; /*13px*/
+        font-size: 0.8125em; /* 13px */
     }
 
-    p, input, li {
-        font-size: .9375em; /*15px*/
+    p,
+    input,
+    li {
+        font-size: 0.9375em; /* 15px */
     }
 }
 
 @media all and (min-width: 500px) {
     h2 {
-        font-size: 1.4em; /*22.4px*/
+        font-size: 1.4em; /* 22.4px */
     }
 
-    h3, button.large {
-        font-size: 1.1em; /*17.6px*/
+    h3,
+    button.large {
+        font-size: 1.1em; /* 17.6px */
     }
 
     button.nav {
-        font-size: .875em; /*14px*/
+        font-size: 0.875em; /* 14px */
     }
 
     figcaption {
-        font-size: .875em; /*14px*/
+        font-size: 0.875em; /* 14px */
     }
 
-    p, input, li {
-        font-size: 1em; /*16px*/
+    p,
+    input,
+    li {
+        font-size: 1em; /* 16px */
     }
 }
 
 @media all and (min-width: 600px) {
     h2 {
-        font-size: 1.6em; /*25.6px*/
+        font-size: 1.6em; /* 25.6px */
     }
 
-    h3, button.large {
-        font-size: 1.2em; /*19.2px*/
+    h3,
+    button.large {
+        font-size: 1.2em; /* 19.2px */
     }
 
     button.nav {
-        font-size: 1em; /*16px*/
+        font-size: 1em; /* 16px */
     }
 
     figcaption {
-        font-size: .9375em; /*15px*/
+        font-size: 0.9375em; /* 15px */
     }
 
-    p, input, li {
-        font-size: 1.1em; /*17.6px*/
+    p,
+    input,
+    li {
+        font-size: 1.1em; /* 17.6px */
     }
 }
 
-/*VARIOUS "CLASSES" FOR FONTS ARE BELOW*/
-/*makes font red*/
+/* VARIOUS "CLASSES" FOR FONTS ARE BELOW */
+
+/* makes font red */
 .warn {
-    color: #d90416; /*dark red*/
+    color: #d90416; /* dark red */
 }
 
-/*makes font light grey*/
-/*in this case, it hides "loading" text when user "likes" a park.*/
+/* makes font light grey */
+
+/* in this case, it hides "loading" text when user "likes" a park. */
 .subtle {
-    color: #fafafa; /*grey 50*/
+    color: #fafafa; /* grey 50 */
 }
