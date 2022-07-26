@@ -2,7 +2,7 @@
     <section>
         <PageIntro
             title="Welcome"
-            intro="Since 1916, the National Park Service has safeguarded America's national parks."
+            intro="Since 1916, the National Park Service has safeguarded America's National Parks."
         />
 
         <div class="home-page">
