@@ -1,0 +1,587 @@
+----------------------------------
+LIST OF PARKS IN ALPHABETICAL ORDER
+----------------------------------
+
+"A, B, C"
+Acadia National Park
+Arches National Park
+Badlands National Park
+Big Bend National Park
+Biscayne National Park
+Black Canyon of the Gunnison National Park
+Bryce Canyon National Park
+Canyonlands National Park
+Capitol Reef National Park
+Carlsbad Caverns National Park
+Channel Islands National Park
+Congaree National Park
+Crater Lake National Park
+Cuyahoga Valley National Park
+
+
+"D, E, G"
+Death Valley National Park
+Denali National Park
+Dry Tortugas National Park
+Everglades National Park
+Gates of the Arctic National Park & Preserve
+Gateway Arch National Park
+Glacier Bay National Park & Preserve
+Glacier National Park
+Grand Canyon National Park
+Grand Teton National Park
+Great Basin National Park
+Great Sand Dunes National Park & Preserve
+Great Smoky Mountains National Park
+Guadalupe Mountains National Park
+
+"H, I, J, K"
+Haleakalā National Park
+Hawai‘i Volcanoes National Park
+Hot Springs National Park
+Indiana Dunes National Park
+Isle Royale National Park
+Joshua Tree National Park
+Katmai National Park & Preserve
+Kenai Fjords National Park
+Kobuk Valley National Park
+
+"L, M, N"
+Lake Clark National Park & Preserve
+Lassen Volcanic National Park
+Mammoth Cave National Park
+Mesa Verde National Park
+Mount Rainier National Park
+National Park of American Samoa
+National Parks of New York Harbor
+New River Gorge National Park and Preserve
+North Cascades National Park
+
+"O, P, R, S, T"
+Olympic National Park
+Petrified Forest National Park
+Pinnacles National Park
+Rocky Mountain National Park
+Saguaro National Park
+Sequoia & Kings Canyon National Park
+Shenandoah National Park
+Theodore Roosevelt National Park
+
+"V, W, Y, Z"
+Virgin Islands National Park
+Voyageurs National Park
+White Sands National Park
+Wind Cave National Park
+Wolf Trap National Park for the Performing Arts
+Wrangell - St. Elias National Park & Preserve
+Yellowstone National Park
+Yosemite National Park
+Zion National Park
+
+----------------------------------
+STATES, TERRITORIES WITH PARKS
+----------------------------------
+
+Alaska
+American Samoa
+Arizona
+Arkansas
+California
+Colorado
+Florida
+Hawaii
+Idaho
+Indiana
+Kentucky
+Maine
+Michigan
+Minnesota
+Missouri
+Montana
+Nevada
+New Mexico
+New York
+North Carolina
+North Dakota
+Ohio
+Oregon
+South Carolina
+South Dakota
+Tennessee
+Texas
+Utah
+Virgin Islands
+Virginia
+Washington
+West Virginia
+Wyoming
+
+----------------------------------
+PHOTO SOURCES FOR PARKS
+----------------------------------
+
+Acadia National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=3539176&id=528f2494-8a58-4156-a27c-3d74cc8bdfe5&gid=62AD72B0-EF01-4A6B-BEEB-B74F8B46DB52
+
+Arches National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=5802680&id=1FDB5483-155D-451F-67E46D15E6405CA2&gid=221F3BB7-155D-451F-6738DBB434CFBF5E
+
+Badlands National Park
+https://www.nps.gov/media/photo/view.htm?id=c0a01fbf-ed06-44e0-b6d4-a4eda548117b
+
+Big Bend National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=2567920&id=3fb0b2b9-0dab-4347-a8a9-370746274751&gid=8939A464-9526-4871-A5BC-A304EC7E17EC
+
+Biscayne National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=898241&id=4A52329C-1DD8-B71C-0774B48328EB3702&gid=4A307E61-1DD8-B71C-070872648DBC7CF4
+
+Black Canyon of the Gunnison National Park
+https://www.nps.gov/blca/planyourvisit/eastportal.htm
+
+Bryce Canyon National Park
+https://www.nps.gov/brca/planyourvisit/backcountryinfo.htm
+
+Canyonlands National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=6047465&id=5A65C05D-155D-451F-67A2D4B36F6E866E&gid=1196DD4A-E02E-43E6-9B25-539D2477542A
+
+Capitol Reef National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=2189358&id=2c8bfa34-737d-42da-81f0-9a4e130db2aa&gid=68D0E3D7-155D-451F-670C6155E53196CC
+
+Carlsbad Caverns National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=1828436&id=D1777EDC-155D-451F-67B1CADB531E5FE0&gid=D0D6F890-155D-451F-67AA7B66C2426F55
+
+Channel Islands National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=7066554&id=EF269C25-155D-4519-3EA5CD8BB029721A&gid=EF269B55-155D-4519-3EC1942FBC7BB39A
+
+Congaree National Park
+https://home.nps.gov/cong/planyourvisit/walks-and-talks.htm
+
+Crater Lake National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=146830&id=BF56C235-1DD8-B71B-0B9D029652502E9E&gid=BEE18C1E-1DD8-B71B-0B51590AC298A184
+
+Cuyahoga Valley National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=6544188&id=5E1226C9-155D-4519-3E41F33A1B5423CB&gid=5DF5C7E8-155D-4519-3E1DD6F4D6D85DB2
+
+Death Valley National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=29422&id=2a9167cb-7de5-481e-8de3-b763bb9bd640&gid=F255D951-757C-49B9-A561-AC2C94313BBB
+
+Denali National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=948286&id=64c7afd1-86f7-438c-bc88-d96a68cb6a6e&gid=C0C8932F-8EB1-490B-A94E-C59FC3760370
+
+Dry Tortugas National Park
+https://www.nps.gov/drto/learn/nature/corals.htm
+
+Everglades National Park
+https://www.nps.gov/ever/learn/photosmultimedia/2021-photo-contest-winners.htm
+
+Gates of the Arctic National Park & Preserve
+https://www.flickr.com/photos/alaskanps/9027103754/in/album-72157634090454270/
+
+Gateway Arch National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=3026700&id=e471befa-cda8-45ee-8dbc-dc0381d759cf&gid=68B91F4A-155D-4519-3EF693EC657D9F13
+
+Glacier Bay National Park & Preserve
+https://www.nps.gov/places/raven-and-eagle-totem-poles.htm
+
+Glacier National Park
+https://www.flickr.com/photos/glaciernps/52170769514/
+
+Grand Canyon National Park
+https://www.nps.gov/orgs/1207/aianta-partnership-2021.htm
+
+Grand Teton National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=1952309&id=FBCEE606-155D-451F-67A688FD132C9FF1&gid=FBC55F14-155D-451F-6798C62397AD1A3B
+
+Great Basin National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=5032976&id=1E2D5A86-155D-4519-3E506B40141B4CED&gid=1E2B3FB5-155D-4519-3EC37DC45B729AA1
+
+Great Sand Dunes National Park & Preserve
+https://www.flickr.com/photos/greatsanddunesnpp/51876793544/
+
+Great Smoky Mountains National Park
+https://www.nps.gov/grsm/planyourvisit/burial_landscape.htm
+
+Guadalupe Mountains National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=2169359&id=FE42135A-155D-451F-67FD75ADD27DDCC8&gid=FE3EE776-155D-451F-6732B5A08E706C67
+
+Haleakalā National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=6945880&id=389a8c61-c9e9-478d-8349-cd5a4ced86a7&gid=DA99C845-155D-4519-3E5247D886365801
+
+Hawai‘i Volcanoes National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=23663&id=ae9cf0c6-2c35-4dc3-9ca1-cc575801f401&gid=A1C86AA6-62D4-46CD-826D-02BA2FD581B9
+
+Hot Springs National Park
+https://www.nps.gov/hosp/planyourvisit/campground.htm
+
+Indiana Dunes National Park
+https://www.nps.gov/indu/planyourvisit/indiana-dunes-geocaching.htm
+
+Isle Royale National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=7286937&id=0ce06739-bfbc-4382-b7e2-5444a338d0d5&gid=56288454-84F2-4D67-8F02-2439F8E33052
+
+Joshua Tree National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=681309&id=366FDA1F-1DD8-B71B-0B87C45ACA57EF17&gid=F5DD6FE7-1DD8-B71B-0B543C7B6B500E37
+
+Katmai National Park & Preserve
+https://www.nps.gov/media/photo/gallery-item.htm?pg=829915&id=5e04fc16-47ed-4ffb-a33e-a9ea931348dd&gid=62E4AB9B-0F0D-49A1-9686-B9AB4F39C6A0
+
+Kenai Fjords National Park
+https://www.nps.gov/kefj/planyourvisit/exit-glacier-area.htm
+
+Kobuk Valley National Park
+https://www.nps.gov/kova/planyourvisit/backpacking.htm
+
+Lake Clark National Park & Preserve
+https://www.nps.gov/media/photo/gallery-item.htm?pg=899172&id=69afa166-5c4c-4dee-a3f5-42637b9b0e6c&gid=8CC8CF8A-1DD8-B71C-0740112B23797B57
+
+Lassen Volcanic National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=6425619&id=0d883371-69f8-4d8c-b0b3-66ed0f3e1ce0&gid=D64750C7-CFEE-4A86-8DF6-ADD1AE71CD0A
+
+Mammoth Cave National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=7175214&id=5272c68f-8711-4cf8-89a1-62787d638c69&gid=14151162-AD75-42FD-A21F-E58957146170
+
+Mesa Verde National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=6562509&id=FF58BEFB-155D-451F-67A5EEB525913B53&gid=FF496A0D-155D-451F-6780618AC2528471
+
+Mount Rainier National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=5003191&id=943EA842-BD86-1631-0E83CC78296861BB&gid=CA4C9908-155D-4519-3E19303DAEADE22C
+
+National Park of American Samoa
+https://www.nps.gov/npsa/planyourvisit/hiking.htm
+
+National Parks of New York Harbor
+https://www.nps.gov/media/photo/gallery-item.htm?pg=5062776&id=A3C35293-1DD8-B71B-0B2F05C54BA43C7F&gid=CA486AE4-1DD8-B71B-0B3E84C34DE0228D
+
+New River Gorge National Park and Preserve
+https://www.nps.gov/media/photo/gallery-item.htm?pg=6337343&id=99bec34d-8b50-4302-8cef-8fb99f5bbcba&gid=BCE5DB63-8FC7-4545-A098-42ACB7DDD41B
+
+North Cascades National Park
+https://www.nps.gov/noca/planyourvisit/climbing.htm
+
+Olympic National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=6741680&id=4024074C-1DD8-B71B-0B27926F935D587A&gid=F23B92B0-155D-4519-3E8887C9EDC70F23
+
+Petrified Forest National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=2160865&id=cfed67a7-d5a3-4f98-8dfc-061707fca028&gid=30D1BB7F-43C9-496A-9775-1CA496E86F33
+
+Pinnacles National Park
+https://www.nps.gov/pinn/learn/nature/geology.htm
+
+Rocky Mountain National Park
+https://www.nps.gov/romo/planyourvisit/hikes.htm
+
+Saguaro National Park
+https://www.nps.gov/sagu/planyourvisit/saguaro_hiking.htm
+
+Sequoia & Kings Canyon National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=5152549&id=546af6ab-58eb-45ef-846a-7a4fca0efa87&gid=1FA3063D-155D-4519-3E64D25A186E9E17
+
+Shenandoah National Park
+https://www.flickr.com/photos/snpphotos/51861079502/
+
+Theodore Roosevelt National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=3079955&id=5E1EF2B2-1DD8-B71B-0BA7775A32027DA3&gid=F78D5022-1DD8-B71B-0BAE1A8C783C68BC
+
+Virgin Islands National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=5563920&id=87D91EB7-1DD8-B71B-0B68535F742AF3CC&gid=E1144A90-1DD8-B71C-070DDC5A91E1DE4F
+
+Voyageurs National Park
+https://home.nps.gov/thingstodo/oberholtzer-trail.htm
+
+White Sands National Park
+https://www.nps.gov/whsa/planyourvisit/driving-dunes-drive.htm
+
+Wind Cave National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=3024146&id=a02c9e4d-3e85-43b7-8878-01489812bc47&gid=EC0FE84A-5EBF-4A1E-B18F-063DA72383C8
+
+Wolf Trap National Park for the Performing Arts
+https://www.nps.gov/wotr/planyourvisit/eatingsleeping.htm
+
+Wrangell - St. Elias National Park & Preserve
+https://www.nps.gov/wrst/planyourvisit/backpacking.htm
+
+Yellowstone National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=0&id=cebbfa91-94e3-4e62-bf1d-1dca050c5d5f&gid=25C97BD8-155D-451F-675E208BE082FE26
+
+Yosemite National Park
+https://www.nps.gov/yose/planyourvisit/hh.htm
+
+Zion National Park
+https://www.nps.gov/media/photo/gallery-item.htm?pg=2122026&id=9863D408-155D-451F-67DF89CC4A0175B1&gid=98B2CD6B-155D-451F-67A73851F18C9948
+
+----------------------------------
+NPS LOGO
+----------------------------------
+
+The National Park Service logo in SVG and PNG formats is available on Wikimedia Commons.
+https://en.wikipedia.org/wiki/File:Logo_of_the_United_States_National_Park_Service.svg
+
+----------------------------------
+PARKS WITH THEIR NPS WEB LINK AND STATE
+----------------------------------
+
+Acadia National Park
+https://www.nps.gov/acad/index.htm
+Maine
+
+Arches National Park
+https://www.nps.gov/arch/index.htm
+Utah
+
+Badlands National Park
+https://www.nps.gov/badl/index.htm
+South Dakota
+
+Big Bend National Park
+https://www.nps.gov/bibe/index.htm
+Texas
+
+Biscayne National Park
+https://www.nps.gov/bisc/index.htm
+Florida
+
+Black Canyon of the Gunnison National Park
+https://www.nps.gov/blca/index.htm
+Colorado
+
+Bryce Canyon National Park
+https://www.nps.gov/brca/index.htm
+Utah
+
+Canyonlands National Park
+https://www.nps.gov/cany/index.htm
+Utah
+
+Capitol Reef National Park
+https://www.nps.gov/care/index.htm
+Utah
+
+Carlsbad Caverns National Park
+https://www.nps.gov/cave/index.htm
+New Mexico
+
+Channel Islands National Park
+https://www.nps.gov/chis/index.htm
+California
+
+Congaree National Park
+https://www.nps.gov/cong/index.htm
+South Carolina
+
+Crater Lake National Park
+https://www.nps.gov/crla/index.htm
+Oregon
+
+Cuyahoga Valley National Park
+https://www.nps.gov/cuva/index.htm
+Ohio
+
+Death Valley National Park
+https://www.nps.gov/deva/index.htm
+California and Nevada
+
+Denali National Park
+https://www.nps.gov/dena/index.htm
+Alaska
+
+Dry Tortugas National Park
+https://www.nps.gov/drto/index.htm
+Florida
+
+Everglades National Park
+https://www.nps.gov/ever/index.htm
+Florida
+
+Gates of the Arctic National Park & Preserve
+https://www.nps.gov/gaar/index.htm
+Alaska
+
+Gateway Arch National Park
+https://www.nps.gov/jeff/index.htm
+Missouri
+
+Glacier Bay National Park & Preserve
+https://www.nps.gov/glba/index.htm
+Alaska
+
+Glacier National Park
+https://www.nps.gov/glac/index.htm
+Montana
+
+Grand Canyon National Park
+https://www.nps.gov/grca/index.htm
+Arizona
+
+Grand Teton National Park
+https://www.nps.gov/grte/index.htm
+Wyoming
+
+Great Basin National Park
+https://www.nps.gov/grba/index.htm
+Nevada
+
+Great Sand Dunes National Park & Preserve
+https://www.nps.gov/grsa/index.htm
+Colorado
+
+Great Smoky Mountains National Park
+https://www.nps.gov/grsm/index.htm
+North Carolina and Tennessee
+
+Guadalupe Mountains National Park
+https://www.nps.gov/gumo/index.htm
+Texas
+
+Haleakalā National Park
+https://www.nps.gov/hale/index.htm
+Hawaii
+
+Hawai‘i Volcanoes National Park
+https://www.nps.gov/havo/index.htm
+Hawaii
+
+Hot Springs National Park
+https://www.nps.gov/hosp/index.htm
+Arkansas
+
+Indiana Dunes National Park
+https://www.nps.gov/indu/index.htm
+Indiana
+
+Isle Royale National Park
+https://www.nps.gov/isro/index.htm
+Michigan
+
+Joshua Tree National Park
+https://www.nps.gov/jotr/index.htm
+California
+
+Katmai National Park & Preserve
+https://www.nps.gov/katm/index.htm
+Alaska
+
+Kenai Fjords National Park
+https://www.nps.gov/kefj/index.htm
+Alaska
+
+Kobuk Valley National Park
+https://www.nps.gov/kova/index.htm
+Alaska
+
+Lake Clark National Park & Preserve
+https://www.nps.gov/lacl/index.htm
+Alaska
+
+Lassen Volcanic National Park
+https://www.nps.gov/lavo/index.htm
+California
+
+Mammoth Cave National Park
+https://www.nps.gov/maca/index.htm
+Kentucky
+
+Mesa Verde National Park
+https://www.nps.gov/meve/index.htm
+Colorado
+
+Mount Rainier National Park
+https://www.nps.gov/mora/index.htm
+Washington
+
+National Park of American Samoa
+https://www.nps.gov/npsa/index.htm
+American Samoa
+
+National Parks of New York Harbor
+https://www.nps.gov/npnh/index.htm
+New York
+
+New River Gorge National Park and Preserve
+https://www.nps.gov/neri/index.htm
+West Virginia
+
+North Cascades National Park
+https://www.nps.gov/noca/index.htm
+Washington
+
+Olympic National Park
+https://www.nps.gov/olym/index.htm
+Washington
+
+Petrified Forest National Park
+https://www.nps.gov/pefo/index.htm
+Arizona
+
+Pinnacles National Park
+https://www.nps.gov/pinn/index.htm
+California
+
+Rocky Mountain National Park
+https://www.nps.gov/romo/index.htm
+Colorado
+
+Saguaro National Park
+https://www.nps.gov/sagu/index.htm
+Arizona
+
+Sequoia & Kings Canyon National Park
+https://www.nps.gov/seki/index.htm
+California
+
+Shenandoah National Park
+https://www.nps.gov/shen/index.htm
+Virginia
+
+Theodore Roosevelt National Park
+https://www.nps.gov/thro/index.htm
+North Dakota
+
+Virgin Islands National Park
+https://www.nps.gov/viis/index.htm
+Virgin Islands
+
+Voyageurs National Park
+https://www.nps.gov/voya/index.htm
+Minnesota
+
+White Sands National Park
+https://www.nps.gov/whsa/index.htm
+New Mexico
+
+Wind Cave National Park
+https://www.nps.gov/wica/index.htm
+South Dakota
+
+Wolf Trap National Park for the Performing Arts
+https://www.nps.gov/wotr/index.htm
+Virginia
+
+Wrangell - St. Elias National Park & Preserve
+https://www.nps.gov/wrst/index.htm
+Alaska
+
+Yellowstone National Park
+https://www.nps.gov/yell/index.htm
+Idaho, Montana, Wyoming
+
+Yosemite National Park
+https://www.nps.gov/yose/index.htm
+California
+
+Zion National Park
+https://www.nps.gov/zion/index.htm
+Utah
+
+----------------------------------
+NATIONAL PARK REGIONS
+----------------------------------
+Alaska
+Intermountain
+Midwest
+National Capital
+Northeast
+Pacific
+Southeast
+
+MAP:
+https://www.nps.gov/gis/documents/nps_regions_11x8-5-new.pdf
