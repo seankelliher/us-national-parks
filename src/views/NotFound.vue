@@ -1,11 +1,13 @@
 <template>
     <PageIntro
         title="National Park Service"
-        intro="The National Park Service is the caretaker of America's National Parks."
+        intro="Since 1916, the National Park Service has safeguarded America's National Parks."
     />
     <section>
-        <PageTitle name="404 - Page Not Found" />
-        <p>Sorry, the page you are looking for does not exist.</p>
+        <div class="park">
+            <h3>404 - Page Not Found</h3>
+            <p>Sorry, the page you are looking for does not exist.</p>
+        </div>
     </section>
 </template>
 
