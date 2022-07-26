@@ -35,8 +35,8 @@
         >
             <ol>
                 <li
-                    v-for="listItem in listItems"
-                    :key="listItem"
+                    v-for="(listItem, index) in listItems"
+                    :key="index"
                 >
                     {{ listItem }}
                 </li>
